@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsistenteJudicialApp.Views.AgregarProcesoPage"
+             Title="Agregar Proceso">
+    <ContentPage.Content>
+        <StackLayout Padding="15,0">
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Radicacion" FontAttributes="Bold" FontSize="Medium" />
+                    <Entry x:Name="radicacionEntry" Keyboard="Numeric" />
+                    <Label Text="Selecione Juzgado" FontAttributes="Bold" FontSize="Medium"/>
+                    <Picker x:Name="juzgadoTipo" SelectedIndexChanged="JuzgadoTipo_SelectedIndexChanged"  />
+                    <Label Text="Numero de Juzgado" FontAttributes="Bold" FontSize="Medium"/>
+                    <Picker x:Name="juzgadoNumero" SelectedIndexChanged="JuzgadoNumero_SelectedIndexChanged" />
+                    <Label Text="Demandante" FontAttributes="Bold" FontSize="Medium"/>
+                    <Entry x:Name="demandanteEntry"/>
+                    <Label Text="Demandado" FontAttributes="Bold" FontSize="Medium"/>
+                    <Entry x:Name="demandadoEntry"/>
+                </StackLayout>
+            </ScrollView>
+
+            <Button x:Name="guadarProceso" Text="Guardar Proceso" Clicked="GuadarProceso_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

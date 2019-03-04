@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsistenteJudicialApp.Views.ProcesoPage">
+    <ContentPage.Content>
+        <StackLayout Padding="15,0">
+            <Label Text="Radicacion" FontAttributes="Bold" FontSize="Medium"/>
+            <Label x:Name="radicacion" FontSize="Medium"/>
+            <Label Text="Juzgado" FontAttributes="Bold" FontSize="Medium"/>
+            <Label x:Name="juzgado" FontSize="Medium"/>
+            <Label Text="Demandante" FontAttributes="Bold" FontSize="Medium"/>
+            <Label x:Name="demandante" FontSize="Medium"/>
+            <Label Text="Demandado" FontAttributes="Bold" FontSize="Medium"/>
+            <Label x:Name="demandado" FontSize="Medium"/>
+
+            <Label Text="Estados" FontAttributes="Bold" FontSize="Large"/>
+            <ScrollView>
+                
+                <ListView x:Name="lstEstado" HasUnevenRows="True" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="15,0">
+                                    <Label Grid.Column="1" Text="{Binding fecha}" FontAttributes="Bold" FontSize="Medium" />
+                                    <Label Grid.Column="2" Text="{Binding descripcion}" FontSize="Medium" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+            </StackLayout>
+       
+
+    </ContentPage.Content>
+</ContentPage>
