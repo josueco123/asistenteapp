@@ -111,6 +111,14 @@ class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"GCM.Client.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.Notifications.Abstractions.dll",
+		"Plugin.Notifications.dll",
+		"SQLite-net.dll",
+		"SQLitePCLRaw.batteries_green.dll",
+		"SQLitePCLRaw.batteries_v2.dll",
+		"SQLitePCLRaw.core.dll",
+		"SQLitePCLRaw.lib.e_sqlite3.dll",
+		"SQLitePCLRaw.provider.e_sqlite3.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",
@@ -140,6 +148,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.GooglePlayServices.Gcm.dll",
 		"Xamarin.GooglePlayServices.Iid.dll",
 		"Xamarin.GooglePlayServices.Tasks.dll",
+		"XamarinShortcutBadger.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

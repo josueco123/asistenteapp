@@ -35,6 +35,20 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Notifications/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Notifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Notifications.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Notifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Notifications.dll": {}
+        }
+      },
       "Xamarin.Forms/3.4.0.1008975": {
         "type": "package",
         "compile": {
@@ -163,6 +177,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.1",
+          "Plugin.Notifications": "4.0.2",
           "Xamarin.Forms": "3.4.0.1008975"
         },
         "compile": {
@@ -207,6 +222,20 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Notifications/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Notifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Notifications.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Notifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Notifications.dll": {}
+        }
+      },
       "Xamarin.Forms/3.4.0.1008975": {
         "type": "package",
         "compile": {
@@ -335,6 +364,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.1",
+          "Plugin.Notifications": "4.0.2",
           "Xamarin.Forms": "3.4.0.1008975"
         },
         "compile": {
@@ -379,6 +409,20 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Notifications/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Notifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Notifications.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Notifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Notifications.dll": {}
+        }
+      },
       "Xamarin.Forms/3.4.0.1008975": {
         "type": "package",
         "compile": {
@@ -507,6 +551,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.1",
+          "Plugin.Notifications": "4.0.2",
           "Xamarin.Forms": "3.4.0.1008975"
         },
         "compile": {
@@ -551,6 +596,20 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Notifications/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Notifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Notifications.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Notifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Notifications.dll": {}
+        }
+      },
       "Xamarin.Forms/3.4.0.1008975": {
         "type": "package",
         "compile": {
@@ -679,6 +738,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.1",
+          "Plugin.Notifications": "4.0.2",
           "Xamarin.Forms": "3.4.0.1008975"
         },
         "compile": {
@@ -872,6 +932,39 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.12.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec"
+      ]
+    },
+    "Plugin.Notifications/4.0.2": {
+      "sha512": "rRGqfKqK8yojBjG80FISrLaNsSnJoq+XjoQdXFbVqLlMqP7hee3HvzeetDuVJQgKosO55MYfWu5LURd86yU6zA==",
+      "type": "package",
+      "path": "plugin.notifications/4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.Notifications.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Notifications.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Notifications.dll",
+        "lib/MonoAndroid10/Plugin.Notifications.pdb",
+        "lib/Xamarin.Mac20/Plugin.Notifications.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.Notifications.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.Notifications.dll",
+        "lib/Xamarin.iOS10/Plugin.Notifications.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Notifications.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Notifications.dll",
+        "lib/Xamarin.iOS10/Plugin.Notifications.dll.mdb",
+        "lib/Xamarin.iOS10/Plugin.Notifications.pdb",
+        "lib/netstandard1.0/Plugin.Notifications.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Notifications.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Notifications.deps.json",
+        "lib/netstandard1.0/Plugin.Notifications.dll",
+        "lib/netstandard1.0/Plugin.Notifications.pdb",
+        "lib/uap10/Plugin.Notifications.Abstractions.dll",
+        "lib/uap10/Plugin.Notifications.Abstractions.pdb",
+        "lib/uap10/Plugin.Notifications.dll",
+        "lib/uap10/Plugin.Notifications.pdb",
+        "lib/uap10/Plugin.Notifications.pri",
+        "plugin.notifications.4.0.2.nupkg.sha512",
+        "plugin.notifications.nuspec"
       ]
     },
     "Xamarin.Forms/3.4.0.1008975": {

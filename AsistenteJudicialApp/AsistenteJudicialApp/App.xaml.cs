@@ -1,7 +1,9 @@
-﻿using AsistenteJudicialApp.Views;
+﻿using AsistenteJudicialApp.Managers;
+using AsistenteJudicialApp.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace AsistenteJudicialApp
@@ -15,10 +17,15 @@ namespace AsistenteJudicialApp
 
             bool isLoggedIn = Current.Properties.ContainsKey("IsLoggedIn") ? Convert.ToBoolean(Current.Properties["IsLoggedIn"]) : false;
 
-            if (isLoggedIn)
+            if (isLoggedIn) {
+                RegisterNotifications registerNotifications = new RegisterNotifications();
                 MainPage = new NavigationPage(new MainPage());
+            }
             else
+            {
                 MainPage = new NavigationPage(new LoginPage());
+            }
+                
         }
 
         protected override void OnStart()

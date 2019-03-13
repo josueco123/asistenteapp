@@ -8,7 +8,7 @@
             
             <?Image Source="wallpapers.jpg" Aspect="AspectFill" /?>
 
-            <BoxView Color="DarkBlue" Opacity="0.6" />
+            <BoxView Color="#061d34" Opacity="0.8" />
 
             <ActivityIndicator x:Name="indicator">
 
@@ -25,21 +25,18 @@
             <Image Grid.Row="0" Source="icn.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30" />
 
             <StackLayout Grid.Row="1" Padding="30,20">
-                <Entry Placeholder="Correo" PlaceholderColor="White" x:Name="correoEntry"/>
-                <Entry Placeholder="contraseña" PlaceholderColor="White" IsPassword="True" x:Name="passEntry"/>
-                <Button Text="Inicio" BackgroundColor="White" BorderRadius="20" TextColor="DarkBlue" x:Name="login" Clicked="Login_Clicked" />
+                <Entry Placeholder="Correo" PlaceholderColor="Gray" x:Name="correoEntry"/>
+                <Entry Placeholder="Contraseña" PlaceholderColor="Gray" IsPassword="True" x:Name="passEntry"/>
+                <Button Text="Inicio" BackgroundColor="#061d34" BorderRadius="20" TextColor="White" x:Name="login" Clicked="Login_Clicked" />
 
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="Recuperar Contraseña"/>
-                    <Label Text="Registrarse"  HorizontalOptions="EndAndExpand" FontAttributes="Bold"/>
 
-                </StackLayout>
+                <Button Text="Registrarse" BackgroundColor="#061d34" BorderRadius="20" TextColor="White" x:Name="registroBtn" Clicked="RegistroBtn_Clicked"/>
+
+                <Button Text="Recuperar Contraseña" BackgroundColor="Transparent"/>
             </StackLayout>
 
-            <StackLayout Grid.Row="2" HorizontalOptions="Center">
+            <StackLayout Grid.Row="2" Padding="0,0">
 
-                <Label x:Name="test" />
-                
             </StackLayout>
         </Grid>
         

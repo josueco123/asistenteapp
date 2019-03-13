@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:asistentejudicialapp="clr-namespace:AsistenteJudicialApp"
+             x:Class="AsistenteJudicialApp.Views.ActulizarDatosPage"
+             Title="Actulizar Datos">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10" BackgroundColor="LightGray">
+                <Frame>
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Nombre" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
+                        <Entry x:Name="nombreEntry" />
+                        
+                        <Label Text="Correo" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
+                        <Entry x:Name="correoEntry"   />
+                        
+                        <Button x:Name="actulizarBtn" Text="Actulizar" BackgroundColor="#061d34" BorderRadius="20" TextColor="White" Clicked="ActulizarBtn_Clicked"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

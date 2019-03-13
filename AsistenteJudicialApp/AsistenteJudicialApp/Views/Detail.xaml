@@ -4,25 +4,32 @@
              x:Class="AsistenteJudicialApp.Views.Detail"
              Title="Mis Procesos">
     <ContentPage.Content>
-
-        <StackLayout  Padding="15,0">
-
-            <ListView x:Name="lstProcesos" HasUnevenRows="True" ItemTapped="LstProcesos_ItemTapped" >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout>
-                                <Label Grid.Column="1" Text="{Binding radicacion}" FontAttributes="Bold" FontSize="Medium"/>
-                                <Label Grid.Column="2" Text="{Binding juzgado}"  FontSize="Medium"/>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <Button x:Name="agregarProceso" Text="Agragar Proceso" Clicked="AgregarProceso_Clicked"/>
-        </StackLayout>
-        
-       
-        
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10" BackgroundColor="LightGray">
+                <Frame>
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Añade tus procesos para revisión" FontAttributes="Bold" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
+                        <Button x:Name="agregarProceso" BackgroundColor="#061d34" BorderRadius="20" TextColor="White" Text="Agregar Proceso" Clicked="AgregarProceso_Clicked"/>
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Lista de Procesos" FontAttributes="Bold" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
+                        <ListView   x:Name="lstProcesos" HasUnevenRows="True" ItemTapped="LstProcesos_ItemTapped">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout Padding="10,0">
+                                            <Label Grid.Column="1" Text="{Binding radicacion}" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
+                                            <Label Grid.Column="2" Text="{Binding juzgado}"  FontSize="Medium" TextColor="Black" />
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

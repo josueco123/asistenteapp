@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "d9a4511608ce588bb4253b8d4e1c01583234a90e"
+    "signature": "7187db2f31f37ee21b8acf5594ce11b5c99059b9"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,6 +11,7 @@
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.1",
+          "Plugin.Notifications": "4.0.2",
           "Xamarin.Forms": "3.4.0.1008975"
         },
         "runtime": {
@@ -26,6 +27,15 @@
       "Newtonsoft.Json/12.0.1": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Notifications/4.0.2": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Plugin.Notifications.Abstractions.dll": {},
+          "lib/netstandard1.0/Plugin.Notifications.dll": {}
         }
       },
       "Xamarin.Forms/3.4.0.1008975": {
@@ -63,6 +73,13 @@
       "sha512": "sha512-pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
       "path": "newtonsoft.json/12.0.1",
       "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
+    },
+    "Plugin.Notifications/4.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rRGqfKqK8yojBjG80FISrLaNsSnJoq+XjoQdXFbVqLlMqP7hee3HvzeetDuVJQgKosO55MYfWu5LURd86yU6zA==",
+      "path": "plugin.notifications/4.0.2",
+      "hashPath": "plugin.notifications.4.0.2.nupkg.sha512"
     },
     "Xamarin.Forms/3.4.0.1008975": {
       "type": "package",

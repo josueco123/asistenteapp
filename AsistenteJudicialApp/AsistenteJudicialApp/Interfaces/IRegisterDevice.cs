@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AsistenteJudicialApp.Interfaces
+﻿namespace AsistenteJudicialApp.Interfaces
 {
-    interface IRegisterDevice
+    public interface IRegisterDevice
     {
         void RegisterDevice();
     }

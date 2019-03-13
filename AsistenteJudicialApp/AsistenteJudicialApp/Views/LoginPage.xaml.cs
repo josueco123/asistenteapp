@@ -16,7 +16,7 @@ namespace AsistenteJudicialApp.Views
 		public LoginPage ()
 		{
 			InitializeComponent ();
-            NavigationPage.SetHasNavigationBar(this, false);
+            NavigationPage.SetHasNavigationBar(this, false);            
         }
 
         private async void Login_Clicked(object sender, EventArgs e)
@@ -47,9 +47,11 @@ namespace AsistenteJudicialApp.Views
                 login.IsEnabled = true;
                 indicator.IsRunning = false;
                 App.Current.Properties["IsLoggedIn"] = Boolean.TrueString;
-                App.Current.Properties["name"] = res.name;
+                App.Current.Properties["name"] = res.name.ToString();
                 App.Current.Properties["UserId"] = res.id.ToString();
+                App.Current.Properties["Email"] = res.email.ToString();
                 await App.Current.SavePropertiesAsync();
+                RegisterNotifications registerNotifications = new RegisterNotifications();
                 await Navigation.PushAsync(new MainPage());
             }
             catch (Exception ex)
@@ -61,9 +63,18 @@ namespace AsistenteJudicialApp.Views
 
         }
 
+
+        private async void RegistroBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegistroPage());
+        }
+
+
         protected override bool OnBackButtonPressed()
         {
             return true;
         }
+
+       
     }
 }

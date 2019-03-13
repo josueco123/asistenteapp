@@ -10,7 +10,8 @@ namespace AsistenteJudicialApp.Models
         public string identificacion { get; set; }
         public string direccion { get; set; }
         public string telefono { get; set; }
-        public Boolean activo { get; set; }
+        public int activo { get; set; }
         public string tipo { get; set; }
+        public int user_id { get; set; }    
     }
 }

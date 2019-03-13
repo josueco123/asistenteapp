@@ -4,6 +4,34 @@
              x:Class="AsistenteJudicialApp.Views.Master"
              Title="Master">
     <ContentPage.Content>
-        <Button x:Name="CerrarSesion" BackgroundColor="Transparent" HorizontalOptions="Center" Clicked="CerrarSesion_Clicked" Text="Cerrar Sesion"/>
+        <ScrollView>
+            <Grid>
+
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                </Grid>
+                <StackLayout Padding="5,0" Grid.Row="0">
+                    <Image  Source="icn.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30" />
+
+                    <Label Text="Bienvenido" FontSize="Medium" TextColor="Black"  />
+
+                    <Label x:Name="nameLabel" FontSize="Medium" TextColor="Black"/>
+
+                    <BoxView HeightRequest="1" WidthRequest="1" BackgroundColor="Black"/>
+                </StackLayout>
+
+
+                <StackLayout  Grid.Row="1" >
+                    <Button x:Name="notificacionesNtn" BackgroundColor="Transparent" HorizontalOptions="Center" Clicked="NotificacionesNtn_Clicked" Text="Notificaciones" />
+                    <Button x:Name="actualizarNtn" BackgroundColor="Transparent" HorizontalOptions="Center" Text="Actualizar Datos"  Clicked="ActualizarNtn_Clicked"/>
+                    <Button x:Name="CerrarSesion" BackgroundColor="Transparent"  HorizontalOptions="Center" Clicked="CerrarSesion_Clicked" Text="Cerrar Sesion"/>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
