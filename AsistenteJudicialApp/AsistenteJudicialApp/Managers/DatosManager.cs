@@ -14,7 +14,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<Userdato> getDatos(int id)
         {
-            String URL = "https://asistentejudicial.000webhostapp.com/datos/user/" + id;
+            String URL = "http://asistententejudicial.com/datos/user/" + id;
 
             HttpClient client = htclient.getCliente();
 
@@ -29,14 +29,13 @@ namespace AsistenteJudicialApp.Managers
             return null;
         }
 
-        public async void saveDatos(int id, string apellido, string identificacion, string telefono,string direccion)
+        public async void saveDatos(int id, string identificacion, string telefono,string direccion)
         {
-            string URL = "";
+            string URL = "http://asistententejudicial.com/";
 
             HttpClient client = new HttpClient();
 
-            Userdato user = new Userdato();
-            user.apellido = apellido;
+            Userdato user = new Userdato();           
             user.identificacion = identificacion;
             user.telefono = telefono;
             user.direccion = direccion;
@@ -47,14 +46,13 @@ namespace AsistenteJudicialApp.Managers
             var response = await client.PostAsync(URL, content);
         }
 
-        public async void updateDatos(int id,string apellido, string identificacion, string telefono, string direccion)
+        public async void updateDatos(int id, string identificacion, string telefono, string direccion)
         {
-            string URL = "https://asistentejudicial.000webhostapp.com/update/datos/"+id;
+            string URL = "http://asistententejudicial.com/update/datos/" + id;
 
             HttpClient client = new HttpClient();
 
-            Userdato userdato = new Userdato();
-            userdato.apellido = apellido;
+            Userdato userdato = new Userdato();            
             userdato.identificacion = identificacion;
             userdato.telefono = telefono;
             userdato.direccion = direccion;

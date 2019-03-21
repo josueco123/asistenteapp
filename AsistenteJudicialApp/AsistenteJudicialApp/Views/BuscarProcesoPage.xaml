@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsistenteJudicialApp.Views.BuscarProcesoPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" Spacing="10" BackgroundColor="LightGray">
+                <Frame>
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Verifica si tu proceso ya esta en nuestra base de datos" FontAttributes="Bold" FontSize="Small"  TextColor="Black" HorizontalOptions="Center" />
+                        <Label Text="Radicacion" FontAttributes="Bold" FontSize="Medium"  TextColor="Black" />
+                        <Entry x:Name="radicacionEntry" Keyboard="Numeric" />
+                        <Button BackgroundColor="#061d34" BorderRadius="20" TextColor="White" x:Name="buscarProceso" Text="Buscar Proceso" Clicked="BuscarProceso_Clicked" />
+                    </StackLayout>
+                </Frame>
+                <Frame >
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Datos de tu proceso" FontAttributes="Bold" FontSize="Medium"  TextColor="Black" HorizontalOptions="Center" />
+                        <Label Text="Juzgado" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
+                        <Label x:Name="juzgadoLabel" FontAttributes="Bold" FontSize="Small" TextColor="Black"/>
+                        <Label Text="Demandante" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
+                        <Label x:Name="demandanteLabel" FontAttributes="Bold" FontSize="Small" TextColor="Black"/>
+                        <Label Text="Demandado" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
+                        <Label x:Name="demandadoLabel" FontAttributes="Bold" FontSize="Small" TextColor="Black"/>
+                        <Button BackgroundColor="#061d34" BorderRadius="20" TextColor="White" x:Name="agregarProceso" Text="agregar a mis Proceso" Clicked="AgregarProceso_Clicked"  />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

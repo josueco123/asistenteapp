@@ -14,14 +14,17 @@
                 </Frame>
                 <Frame>
                     <StackLayout Orientation="Vertical">
+                        <Button Text="Actualizar" x:Name="actualizarBtn"  BackgroundColor="#061d34" BorderRadius="20" TextColor="White" HorizontalOptions="EndAndExpand" Clicked="LstProcesos_Refreshing" />
                         <Label Text="Lista de Procesos" FontAttributes="Bold" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
-                        <ListView   x:Name="lstProcesos" HasUnevenRows="True" ItemTapped="LstProcesos_ItemTapped">
+                        <ListView   x:Name="lstProcesos" HasUnevenRows="True" ItemTapped="LstProcesos_ItemTapped" IsPullToRefreshEnabled="True" Refreshing="LstProcesos_Refreshing" ListView.RowHeight="150">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <ViewCell>
                                         <StackLayout Padding="10,0">
-                                            <Label Grid.Column="1" Text="{Binding radicacion}" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
-                                            <Label Grid.Column="2" Text="{Binding juzgado}"  FontSize="Medium" TextColor="Black" />
+                                            <Label  Text="{Binding radicacion}" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
+                                            <Label  Text="{Binding juzgado}"  FontSize="Small" TextColor="Black" />
+                                            <Label  Text="{Binding demandante}"  FontSize="Small" TextColor="Black" />
+                                            <Label  Text="{Binding demandado}"  FontSize="Small" TextColor="Black" />
                                         </StackLayout>
                                     </ViewCell>
                                 </DataTemplate>

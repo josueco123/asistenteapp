@@ -3,6 +3,7 @@ using AsistenteJudicialApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,15 +22,21 @@ namespace AsistenteJudicialApp.Views
 		{
 			InitializeComponent ();
             listarProcesos();
-
+                        
         }
 
         private async void listarProcesos()
         {
+
+            if (!HayConexion())
+            {                
+                await DisplayAlert("Atencion", "No tienes conexion a internet para revisar y hacer modificaciones", "Aceptar");
+            }
+
             try
             {
                 ProcesoManager manager = new ProcesoManager();
-                var response = await manager.getProcesosUser(userid);
+                var response = await manager.getProcesosUser(userid);                
 
                 if (response != null)
                 {
@@ -42,6 +49,21 @@ namespace AsistenteJudicialApp.Views
             }
         }
 
+        public static bool HayConexion(string huesped = "https://www.google.com.co/")
+        {
+            try
+            {
+                using (var client = new WebClient())
+                using (client.OpenRead(huesped))
+                {
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
 
         protected override bool OnBackButtonPressed()
         {
@@ -51,14 +73,18 @@ namespace AsistenteJudicialApp.Views
         private async void LstProcesos_ItemTapped(object sender, ItemTappedEventArgs e)
         {
            Proceso proceso = e.Item as Proceso;
-
-           //await DisplayAlert("item", proceso.id.ToString(), "aceptar");
+           
            await Navigation.PushAsync(new ProcesoPage(proceso.id));
         }
 
         private async void AgregarProceso_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AgregarProcesoPage());
+            await Navigation.PushAsync(new BuscarProcesoPage());
+        }
+
+        private void LstProcesos_Refreshing(object sender, EventArgs e)
+        {
+            listarProcesos();
         }
     }
 }

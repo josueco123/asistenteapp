@@ -19,3 +19,6 @@ D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp\o
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp\obj\Debug\netstandard2.0\Views\ActulizarDatosPage.xaml.g.cs
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp\obj\Debug\netstandard2.0\Views\DatosPage.xaml.g.cs
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp\obj\Debug\netstandard2.0\Views\RegistroPage.xaml.g.cs
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp\obj\Debug\netstandard2.0\Views\PagoPage.xaml.g.cs
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp\obj\Debug\netstandard2.0\Views\PagoPSEPage.xaml.g.cs
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp\obj\Debug\netstandard2.0\Views\BuscarProcesoPage.xaml.g.cs

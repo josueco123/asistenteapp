@@ -1,4 +1,5 @@
 ﻿using AsistenteJudicialApp.Views;
+using Plugin.Notifications;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace AsistenteJudicialApp
     {
         public MainPage()
         {
-            InitializeComponent();
+            InitializeComponent();            
             NavigationPage.SetHasNavigationBar(this, false);
             this.Master = new Master();
             this.Detail = new NavigationPage(new Detail());

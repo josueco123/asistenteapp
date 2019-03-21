@@ -10,9 +10,9 @@
                         <DataTemplate>
                             <ViewCell>
                                 <Frame>
-                                    <StackLayout Orientation="Vertical">
+                                    <StackLayout Orientation="Vertical" Opacity="0.6">
                                         <Label Grid.Column="1" Text="{Binding fecha}" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
-                                        <Label Grid.Column="2" Text="{Binding mensaje}"  FontSize="Medium" TextColor="Black" />
+                                        <Label Grid.Column="2" Text="{Binding mensaje}"  FontSize="Small" TextColor="Black" />
                                     </StackLayout>
                                 </Frame>
                             </ViewCell>

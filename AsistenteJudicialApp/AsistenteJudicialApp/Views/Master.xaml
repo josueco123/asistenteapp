@@ -29,7 +29,8 @@
                 <StackLayout  Grid.Row="1" >
                     <Button x:Name="notificacionesNtn" BackgroundColor="Transparent" HorizontalOptions="Center" Clicked="NotificacionesNtn_Clicked" Text="Notificaciones" />
                     <Button x:Name="actualizarNtn" BackgroundColor="Transparent" HorizontalOptions="Center" Text="Actualizar Datos"  Clicked="ActualizarNtn_Clicked"/>
-                    <Button x:Name="CerrarSesion" BackgroundColor="Transparent"  HorizontalOptions="Center" Clicked="CerrarSesion_Clicked" Text="Cerrar Sesion"/>
+                    <Button x:Name="pagosBtn" BackgroundColor="Transparent" HorizontalOptions="Center" Text="Realizar PAgos"  Clicked="PagosBtn_Clicked"/>
+                    <Button x:Name="CerrarSesion" BackgroundColor="Transparent"  HorizontalOptions="Center" Clicked="CerrarSesion_Clicked" Text="Cerrar Session"/>
                 </StackLayout>
             </Grid>
         </ScrollView>

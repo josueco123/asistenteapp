@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsistenteJudicialApp.Views.PagoPSEPage">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <StackLayout Orientation="Horizontal">
+                <Button Text="atras" HorizontalOptions="StartAndExpand" Clicked="OnBackButtonClicked" BackgroundColor="#061d34" BorderRadius="20" TextColor="White"/>
+                <Button Text="adelante" HorizontalOptions="EndAndExpand" Clicked="OnForwardButtonClicked" BackgroundColor="#061d34" BorderRadius="20" TextColor="White"/>
+            </StackLayout>
+            <!-- WebView needs to be given height and width request within layouts to render. -->
+            <WebView x:Name="webView" WidthRequest="1000" HeightRequest="1000" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -25,7 +25,7 @@
             <Image Grid.Row="0" Source="icn.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30" />
 
             <StackLayout Grid.Row="1" Padding="30,20">
-                <Entry Placeholder="Correo" PlaceholderColor="Gray" x:Name="correoEntry"/>
+                <Entry Placeholder="Correo" PlaceholderColor="Gray" x:Name="correoEntry" Keyboard="Email"/>
                 <Entry Placeholder="Contraseña" PlaceholderColor="Gray" IsPassword="True" x:Name="passEntry"/>
                 <Button Text="Inicio" BackgroundColor="#061d34" BorderRadius="20" TextColor="White" x:Name="login" Clicked="Login_Clicked" />
 

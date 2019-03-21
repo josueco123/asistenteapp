@@ -14,14 +14,13 @@ namespace AsistenteJudicialApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DatosPage : ContentPage
     {
-        string apellido;
+        
         int id;
 
-        public DatosPage(string apellido)
+        public DatosPage()
 		{
 			InitializeComponent ();
-            
-            this.apellido = apellido;
+                        
            
             id = Convert.ToInt32(App.Current.Properties["UserId"].ToString());
 		}
@@ -39,14 +38,14 @@ namespace AsistenteJudicialApp.Views
 
             if (string.IsNullOrEmpty(telefonoEntry.Text))
             {
-                await DisplayAlert("Error", "Debe ingresar un numero de Telegon", "Aceptar");
+                await DisplayAlert("Error", "Debe ingresar un numero de Telefono", "Aceptar");
                 telefonoEntry.Focus();
                 return;
             }
 
             if (string.IsNullOrEmpty(direccionEntry.Text))
             {
-                await DisplayAlert("Error", "Debe ingresar un numero de Telefono", "Aceptar");
+                await DisplayAlert("Error", "Debe ingresar un numero de Direccion", "Aceptar");
                 direccionEntry.Focus();
                 return;
             }
@@ -55,7 +54,7 @@ namespace AsistenteJudicialApp.Views
             {
                 guardarBtn.IsEnabled = false;                
                 DatosManager datosManager = new DatosManager();                
-                datosManager.saveDatos(id,apellido, cedulaEntry.Text, telefonoEntry.Text, direccionEntry.Text);
+                datosManager.saveDatos(id,cedulaEntry.Text, telefonoEntry.Text, direccionEntry.Text);
                 guardarBtn.IsEnabled = true;
                 await DisplayAlert("Bienvenido", "Registro creado Correctamente", "Aceptar");
                 

@@ -6,10 +6,11 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="10" Spacing="10" BackgroundColor="LightGray">
-                <Frame>
-                    <StackLayout Orientation="Vertical">
+                <Frame x:Name="frame2" >
+                    <StackLayout Orientation="Vertical" >
+                        <Label Text="Datos de tu proceso" FontAttributes="Bold" FontSize="Medium"  TextColor="Black" HorizontalOptions="Center" />
                         <Label Text="Radicacion" FontAttributes="Bold" FontSize="Medium"  TextColor="Black" />
-                        <Entry x:Name="radicacionEntry" Keyboard="Numeric" />
+                        <Label x:Name="radicacionLabel" />
                         <Label Text="Selecione Juzgado" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
                         <Picker x:Name="juzgadoTipo" SelectedIndexChanged="JuzgadoTipo_SelectedIndexChanged"  />
                         <Label Text="Numero de Juzgado" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />

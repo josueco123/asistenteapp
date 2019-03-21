@@ -16,7 +16,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<IEnumerable<Proceso>> getProcesos()
         {
-            const String URL = "https://asistentejudicial.000webhostapp.com/procesos";
+            const String URL = "http://asistententejudicial.com/procesos";
 
             HttpClient client = htclient.getCliente();
 
@@ -34,7 +34,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<IEnumerable<Proceso>> getProcesosUser(string id)
         {
-            String URL = "https://asistentejudicial.000webhostapp.com/procesos/"+id;
+            String URL = "http://asistententejudicial.com/procesos/" + id;
 
             HttpClient client = htclient.getCliente();
 
@@ -52,7 +52,25 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<Proceso> getProceso(int id)
         {
-            String URL = "https://asistentejudicial.000webhostapp.com/proceso/" + id;
+            String URL = "http://asistententejudicial.com/proceso/" + id;
+
+            HttpClient client = htclient.getCliente();
+
+            var res = await client.GetAsync(URL);
+
+            if (res.IsSuccessStatusCode)
+            {
+                string content = await res.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<Proceso>(content);
+
+            }
+
+            return null;
+        }
+
+        public async Task<Proceso> getProcesoRadicacion(string radicacion)
+        {
+            String URL = "http://asistententejudicial.com/find/proceso/" + radicacion;
 
             HttpClient client = htclient.getCliente();
 
@@ -70,7 +88,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<IEnumerable<Estado>> getEstados(string id)
         {
-            String URL = "https://asistentejudicial.000webhostapp.com/estados/" + id;
+            String URL = "http://asistententejudicial.com/estados/" + id;
 
             HttpClient client = htclient.getCliente();
 
@@ -86,12 +104,22 @@ namespace AsistenteJudicialApp.Managers
             return Enumerable.Empty<Estado>();
         }
 
+        public async void addProcesoUser(string id, string radicacion)
+        {
+            String URL = "http://asistententejudicial.com/save/proceso/" + radicacion + "/" + id;
+
+            HttpClient client = htclient.getCliente();
+
+            var res = await client.GetAsync(URL);
+
+        }
+
         public async void saveProceso(string radicacion,string demandante,string demandado, string juzgado)
         {
 
             HttpClient client = new HttpClient();
 
-            string URL1 = "https://asistentejudicial.000webhostapp.com/guardar";
+            string URL1 = "http://asistententejudicial.com/guardar";
 
             Proceso proceso = new Proceso();
 
@@ -119,7 +147,7 @@ namespace AsistenteJudicialApp.Managers
 
             HttpClient client = new HttpClient();
 
-            string URL1 = "https://asistentejudicial.000webhostapp.com/guardar/"+id;
+            string URL1 = "http://asistententejudicial.com/guardar/" + id;
 
             
 

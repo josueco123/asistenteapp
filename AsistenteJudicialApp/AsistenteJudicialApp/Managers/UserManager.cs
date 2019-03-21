@@ -15,7 +15,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<User> loginUser(string email, string password)
         {
-            String UT = "https://asistentejudicial.000webhostapp.com/log/" + email + "/" + password;
+            String UT = "http://asistententejudicial.com/log/" + email + "/" + password;
 
             HttpClient client = htclient.getCliente();          
 
@@ -32,7 +32,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<User> getUser(int id)
         {
-            String UT = "https://asistentejudicial.000webhostapp.com/users/" + id;
+            String UT = "http://asistententejudicial.com/users/" + id;
 
             HttpClient client = htclient.getCliente();
 
@@ -49,7 +49,7 @@ namespace AsistenteJudicialApp.Managers
         }
         public async void saveUser(string nombre,string correo,string clave)
         {
-            string URL = "https://asistentejudicial.000webhostapp.com/save/user";
+            string URL = "http://asistententejudicial.com/save/user";
 
             HttpClient client = new HttpClient();
 
@@ -68,7 +68,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async void updateUser(int id,string nombre, string correo)
         {
-            string URL = "https://asistentejudicial.000webhostapp.com/update/user/"+ id;
+            string URL = "http://asistententejudicial.com/update/user/" + id;
 
             HttpClient client = new HttpClient();
 

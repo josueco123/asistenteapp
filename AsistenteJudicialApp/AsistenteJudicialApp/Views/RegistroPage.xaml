@@ -8,10 +8,10 @@
             <StackLayout Padding="10" Spacing="10" BackgroundColor="LightGray">
                 <Frame>
                     <StackLayout Orientation="Vertical">
-                        <Label Text="Nombre" FontAttributes="Bold" FontSize="Medium" TextColor="Black"  />
+                        <Label Text="Nombre y Apellido" FontAttributes="Bold" FontSize="Medium" TextColor="Black"  />
                         <Entry x:Name="nombreEntry" />
                         <Label Text="Correo" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
-                        <Entry x:Name="correoEntry" />
+                        <Entry x:Name="correoEntry" Keyboard="Email"/>
                         <Label Text="Contraseña" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
                         <Entry IsPassword="True" x:Name="passEntry"/>
                         <Label Text="Repetir Contraseña" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />

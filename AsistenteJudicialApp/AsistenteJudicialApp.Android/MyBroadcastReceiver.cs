@@ -143,8 +143,8 @@ namespace AsistenteJudicialApp.Droid
                         .SetContentTitle(title)
                         .SetSmallIcon(Resource.Drawable.icn)
                         .SetContentText(desc)
-                        .SetAutoCancel(true)
-                        .SetDefaults(NotificationDefaults.Sound | NotificationDefaults.Vibrate)
+                        .SetAutoCancel(true)                        
+                        .SetDefaults(NotificationDefaults.Sound | NotificationDefaults.Vibrate)                       
                         .SetContentIntent(pendingIntent);
 
             var notificationManager = NotificationManager.FromContext(this);

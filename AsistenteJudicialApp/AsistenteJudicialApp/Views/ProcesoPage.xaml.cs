@@ -14,14 +14,17 @@ namespace AsistenteJudicialApp.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ProcesoPage : ContentPage
 	{
-        ProcesoManager manager;
+        ProcesoManager manager;        
         Proceso proceso;
+        string proceso_id, user_id;
 		public ProcesoPage (int id)
 		{
 			InitializeComponent ();
             manager = new ProcesoManager();
-            obtenerProceso(id);           
-            //obtenerEstados();
+            obtenerProceso(id);
+
+            proceso_id = id.ToString();
+            user_id = App.Current.Properties["UserId"].ToString();
 
         }
 
@@ -43,7 +46,23 @@ namespace AsistenteJudicialApp.Views
                 }
             }
             catch(Exception ex) { }
-        }              
-        
-	}
+        }
+
+        private async void SolicitarBtn_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                solicitarBtn.IsEnabled = false;
+                SolicitudManager manager = new SolicitudManager();
+                manager.saveSolicitud(user_id, proceso_id, observacionesEntry.Text);
+                await DisplayAlert("Listo", "Solicitud enviada pronto enviaremos el auto al correo", "Aceptar");
+                solicitarBtn.IsEnabled = true;
+            }
+            catch(Exception ex)
+            {
+                await DisplayAlert("Error", "Solicitud no realizasa", "Aceptar");
+                solicitarBtn.IsEnabled = true;
+            }
+        }
+    }
 }
