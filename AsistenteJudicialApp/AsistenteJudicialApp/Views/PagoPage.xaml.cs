@@ -15,6 +15,8 @@ namespace AsistenteJudicialApp.Views
 		public PagoPage ()
 		{
 			InitializeComponent ();
+            string cantidad = App.Current.Properties["procesos"].ToString();
+            cantidaLabel.Text = "Actualmente tienes "+ cantidad + " procesos registrados";
 		}
 
         private async void PagopsBtn_Clicked(object sender, EventArgs e)

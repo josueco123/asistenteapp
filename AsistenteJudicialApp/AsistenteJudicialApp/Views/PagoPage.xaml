@@ -9,9 +9,10 @@
                 <Frame>
                     <StackLayout Orientation="Vertical">
                         <Label Text="Precios" FontAttributes="Bold" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
-                        <Label Text="Plan $20.000 mensual" FontSize="Small" TextColor="Black"/>
-                        <Label Text="plaln $40.000 mensual" FontSize="Small" TextColor="Black"/>
-                        <Label Text="plaln $40.000 mensual" FontSize="Small" TextColor="Black"/>
+                        <Label Text="$2.000 mensual por cada proceso" FontSize="Small" TextColor="Black"/>
+                        <Label Text="Te hacemos un descuentos si tienes más de 20 procesos registrados" FontSize="Small" TextColor="Black"/>
+                        <Label x:Name="cantidaLabel"  FontSize="Small" TextColor="Black"/>
+
                     </StackLayout>
                 </Frame>
                 <Frame>

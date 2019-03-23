@@ -8,7 +8,7 @@
             <StackLayout Padding="10" Spacing="10" BackgroundColor="LightGray">
                 <Frame>
                     <StackLayout Orientation="Vertical">
-                        <Label Text="Nombre y Apellido" FontAttributes="Bold" FontSize="Medium" TextColor="Black"  />
+                        <Label Text="Nombre y Apellidos" FontAttributes="Bold" FontSize="Medium" TextColor="Black"  />
                         <Entry x:Name="nombreEntry" />
                         <Label Text="Correo" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
                         <Entry x:Name="correoEntry" Keyboard="Email"/>

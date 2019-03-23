@@ -47,6 +47,22 @@ namespace AsistenteJudicialApp.Managers
 
             return null;
         }
+
+        public async Task<Userestado> getUserEstado(string id)
+        {
+            String UT = "http://asistententejudicial.com/userestado/" + id;
+
+            HttpClient client = htclient.getCliente();
+
+            var res = await client.GetAsync(UT);
+
+            if (res.IsSuccessStatusCode)
+            {
+                string content = await res.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<Userestado>(content);
+            }
+            return null;
+        }
         public async void saveUser(string nombre,string correo,string clave)
         {
             string URL = "http://asistententejudicial.com/save/user";

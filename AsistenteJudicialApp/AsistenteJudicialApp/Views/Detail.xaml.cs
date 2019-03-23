@@ -41,6 +41,8 @@ namespace AsistenteJudicialApp.Views
                 if (response != null)
                 {
                     lstProcesos.ItemsSource = response;
+                    App.Current.Properties["procesos"] = response.Count();
+                    await App.Current.SavePropertiesAsync();
                 }
             }
             catch (Exception ex)

@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AsistenteJudicialApp.Views.BuscarProcesoPage">
+             x:Class="AsistenteJudicialApp.Views.BuscarProcesoPage"
+             Title="Buscar Proceso">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="10" Spacing="10" BackgroundColor="LightGray">
@@ -9,7 +10,7 @@
                     <StackLayout Orientation="Vertical">
                         <Label Text="Verifica si tu proceso ya esta en nuestra base de datos" FontAttributes="Bold" FontSize="Small"  TextColor="Black" HorizontalOptions="Center" />
                         <Label Text="Radicacion" FontAttributes="Bold" FontSize="Medium"  TextColor="Black" />
-                        <Entry x:Name="radicacionEntry" Keyboard="Numeric" />
+                        <Entry x:Name="radicacionEntry" Keyboard="Numeric" MaxLength="23" />
                         <Button BackgroundColor="#061d34" BorderRadius="20" TextColor="White" x:Name="buscarProceso" Text="Buscar Proceso" Clicked="BuscarProceso_Clicked" />
                     </StackLayout>
                 </Frame>

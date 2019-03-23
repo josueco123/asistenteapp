@@ -11,7 +11,7 @@
                         <Label Text="Cedula" FontAttributes="Bold" FontSize="Medium"  TextColor="Black"  />
                         <Entry x:Name="cedulaEntry" />
                         <Label Text="Celular" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
-                        <Entry x:Name="telefonoEntry" Keyboard="Numeric" />
+                        <Entry x:Name="telefonoEntry" Keyboard="Telephone" />
                         <Label Text="Direccion" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
                         <Entry x:Name="direccionEntry"/>
 
