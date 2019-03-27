@@ -27,7 +27,7 @@
     <EmbeddedResource Update="Views\BuscarProcesoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\DatosPage.xaml">
+    <EmbeddedResource Update="Views\ContactoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Detail.xaml">

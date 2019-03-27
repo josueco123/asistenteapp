@@ -18,13 +18,14 @@
                 <Frame>
                     <StackLayout Orientation="Vertical">
                         <Label Text="Recibir Correo con datos para pago" FontAttributes="Bold" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
-                        <Button Text="enviar" x:Name="recibirBtn"  BackgroundColor="#061d34" BorderRadius="20" TextColor="White"  />
+                        <Label Text="Recuerda tener acualizados tus datos adicionales de contacto para comunicarnos en caso de presentarse algun inconvenientes"  FontSize="Small" TextColor="Black"/>
+                        <Button Text="Enviar" x:Name="recibirBtn"  BackgroundColor="#061d34" BorderRadius="20" TextColor="White"  />
                     </StackLayout>
                 </Frame>
                 <Frame>
                     <StackLayout Orientation="Vertical">
-                        <Label Text="Pago Seguro en Linea" FontAttributes="Bold" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
-                        <Button Text="Realizar Pago" x:Name="pagopsBtn"  BackgroundColor="#061d34" BorderRadius="20" TextColor="White" Clicked="PagopsBtn_Clicked"  />
+                        <Label Text="Realizar Pago Seguro en Linea" FontAttributes="Bold" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
+                        <Button Text="Pagar" x:Name="pagopsBtn"  BackgroundColor="#061d34" BorderRadius="20" TextColor="White" Clicked="PagopsBtn_Clicked"  />
                     </StackLayout>
                 </Frame>
             </StackLayout>

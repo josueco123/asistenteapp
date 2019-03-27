@@ -44,5 +44,10 @@ namespace AsistenteJudicialApp.Views
         {
             await Navigation.PushAsync(new PagoPage());
         }
+
+        private async void ContactoBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ContactoPage());
+        }
     }
 }

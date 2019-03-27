@@ -10,12 +10,24 @@
                 <Frame>
                     <StackLayout Orientation="Vertical">
                         <Label Text="Nombre" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
-                        <Entry x:Name="nombreEntry" />
+                        <Entry x:Name="nombreEntry" Keyboard="Text" />
                         
                         <Label Text="Correo" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
                         <Entry x:Name="correoEntry"  Keyboard="Email" />
                         
                         <Button x:Name="actulizarBtn" Text="Actulizar" BackgroundColor="#061d34" BorderRadius="20" TextColor="White" Clicked="ActulizarBtn_Clicked"/>
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Datos de Adicionales de Contacto" FontAttributes="Bold" TextColor="Black" FontSize="Medium" HorizontalOptions="Center"/>
+                        <Label Text="Cedula" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
+                        <Entry x:Name="cedulaEntry" Keyboard="Numeric"/>
+                        <Label Text="Celular" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
+                        <Entry x:Name="telefonoEntry" Keyboard="Telephone" />
+                        <Label Text="Direccion" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
+                        <Entry x:Name="direccionEntry" Keyboard="Text"/>
+                        <Button x:Name="contactoBtn" Text="Actulizar" BackgroundColor="#061d34" BorderRadius="20" TextColor="White" Clicked="ContactoBtn_Clicked"/>
                     </StackLayout>
                 </Frame>
             </StackLayout>

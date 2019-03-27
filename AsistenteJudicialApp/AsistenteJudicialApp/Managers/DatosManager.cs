@@ -31,15 +31,14 @@ namespace AsistenteJudicialApp.Managers
 
         public async void saveDatos(int id, string identificacion, string telefono,string direccion)
         {
-            string URL = "http://asistententejudicial.com/";
+            string URL = "http://asistententejudicial.com/update/datos/" + id;
 
             HttpClient client = new HttpClient();
 
             Userdato user = new Userdato();           
             user.identificacion = identificacion;
             user.telefono = telefono;
-            user.direccion = direccion;
-            user.user_id = id;
+            user.direccion = direccion;            
                         
             string json = JsonConvert.SerializeObject(user);
             var content = new StringContent(json, Encoding.UTF8, "application/json");

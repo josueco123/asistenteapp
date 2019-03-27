@@ -9,7 +9,7 @@
                 <Frame>
                     <StackLayout Orientation="Vertical">
                         <Label Text="Nombre y Apellidos" FontAttributes="Bold" FontSize="Medium" TextColor="Black"  />
-                        <Entry x:Name="nombreEntry" />
+                        <Entry x:Name="nombreEntry" Keyboard="Text" />
                         <Label Text="Correo" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
                         <Entry x:Name="correoEntry" Keyboard="Email"/>
                         <Label Text="Contraseña" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />

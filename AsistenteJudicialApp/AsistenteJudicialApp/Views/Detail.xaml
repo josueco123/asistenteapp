@@ -12,7 +12,6 @@
             <StackLayout Padding="10" Spacing="10" BackgroundColor="LightGray">
                 <Frame>
                     <StackLayout Orientation="Vertical">
-                        <Label Text="Añade tus procesos para revisión" FontAttributes="Bold" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
                         <Button x:Name="agregarProceso" BackgroundColor="#061d34" BorderRadius="20" TextColor="White" Text="Agregar Proceso" Clicked="AgregarProceso_Clicked"/>
                     </StackLayout>
                 </Frame>

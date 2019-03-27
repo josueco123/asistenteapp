@@ -20,7 +20,7 @@
                 </Frame>
                 <Frame>
                     <StackLayout Orientation="Vertical">
-                        <Label Text="Solicitar Auto receinte" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
+                        <Label Text="Solicitar Auto reciente" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
                         <Label Text="¿Tienes alguna obsevacion por hacernos saber?"  FontSize="Small" TextColor="Black"/>
                         <Entry x:Name="observacionesEntry" />
                         <Button Text="Solicitar" x:Name="solicitarBtn"  BackgroundColor="#061d34" BorderRadius="20" TextColor="White" Clicked="SolicitarBtn_Clicked" />

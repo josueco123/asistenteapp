@@ -18,12 +18,14 @@ namespace AsistenteJudicialApp.Views
         UserManager userManager;
         User user;
         Userdato userdato;
+        DatosManager manager;
         int idUser;
 		public ActulizarDatosPage ()
 		{
 			InitializeComponent ();
             
             userManager = new UserManager();
+            manager = new DatosManager();
             idUser = Convert.ToInt32(App.Current.Properties["UserId"].ToString());
             ObtenerDatos(idUser);
 		}
@@ -32,16 +34,23 @@ namespace AsistenteJudicialApp.Views
         {
             try
             {
-                
+                //var datos = await manager.getDatos(id);
                 user = await userManager.getUser(id);
-                nombreEntry.Text = user.name;
-                
+
+                nombreEntry.Text = user.name;                
                 correoEntry.Text = user.email;
+
+                /*if(!(datos == null))
+                {
+                    cedulaEntry.Text = datos.identificacion;
+                    telefonoEntry.Text = datos.telefono;
+                    direccionEntry.Text = datos.direccion;
+                }*/
                
             }
-            catch (Exception ex)
+            catch 
             {
-                await DisplayAlert("error", ex.ToString(), "ok");
+                await DisplayAlert("Error", "No tienes conexion a internet", "Aceptar");
             }
 
         }
@@ -50,15 +59,30 @@ namespace AsistenteJudicialApp.Views
         {
             try
             {
-                userManager.updateUser(idUser, nombreEntry.Text, correoEntry.Text);
-                //manager.updateDatos(idUser, apellidoEntry.Text, cedulaEntry.Text, telefonoEntry.Text, direccionEntry.Text);
+                userManager.updateUser(idUser, nombreEntry.Text, correoEntry.Text);                
                 await DisplayAlert("Perfecto", "Datos Actualizados", "Aceptar");
                 await Navigation.PushAsync(new MainPage());
 
             }
-            catch (Exception ex)
+            catch 
             {
-                await DisplayAlert("error", ex.ToString(), "ok");
+                await DisplayAlert("Error", "Ha ocurrido un error al actulizar los datos", "Aceptar");
+            }
+        }
+
+        private async void ContactoBtn_Clicked(object sender, EventArgs e)
+        {
+            
+
+            try
+            {
+                manager.saveDatos(idUser, cedulaEntry.Text, telefonoEntry.Text, direccionEntry.Text);
+                await DisplayAlert("Perfecto", "Datos Actualizados", "Aceptar");
+                await Navigation.PushAsync(new MainPage());
+            }
+            catch
+            {
+                await DisplayAlert("Error", "Ha ocurrido un error al actulizar los datos", "Aceptar");
             }
         }
     }
