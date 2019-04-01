@@ -15,23 +15,22 @@
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                 </Grid>
-                <StackLayout Padding="5,0" Grid.Row="0">
+                <StackLayout Padding="5,0" Grid.Row="0" BackgroundColor="#061d34" >
                     <Image  Source="icn.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30" />
 
-                    <Label Text="Bienvenido" FontSize="Medium" TextColor="Black"  />
+                    <Label Text="Bienvenido" FontSize="Medium" TextColor="White"  />
 
-                    <Label x:Name="nameLabel" FontSize="Medium" TextColor="Black"/>
-
-                    <BoxView HeightRequest="1" WidthRequest="1" BackgroundColor="Black"/>
+                    <Label x:Name="nameLabel" FontSize="Medium" TextColor="white"/>
+                    
                 </StackLayout>
 
 
                 <StackLayout  Grid.Row="1" >
-                    <Button x:Name="notificacionesNtn" BackgroundColor="Transparent" HorizontalOptions="Center" Clicked="NotificacionesNtn_Clicked" Text="Notificaciones" />
-                    <Button x:Name="actualizarNtn" BackgroundColor="Transparent" HorizontalOptions="Center" Text="Actualizar Datos"  Clicked="ActualizarNtn_Clicked"/>
-                    <Button x:Name="pagosBtn" BackgroundColor="Transparent" HorizontalOptions="Center" Text="Realizar Pagos"  Clicked="PagosBtn_Clicked"/>
-                    <Button x:Name="contactoBtn" BackgroundColor="Transparent" HorizontalOptions="Center" Text="Contactenos" Clicked="ContactoBtn_Clicked"/>
-                    <Button x:Name="CerrarSesion" BackgroundColor="Transparent"  HorizontalOptions="Center" Clicked="CerrarSesion_Clicked" Text="Cerrar Session"/>
+                    <Button x:Name="notificacionesNtn" HorizontalOptions="Start" BackgroundColor="Transparent"  Clicked="NotificacionesNtn_Clicked" Text="Notificaciones" />
+                    <Button x:Name="actualizarNtn" HorizontalOptions="Start" BackgroundColor="Transparent" Text="Actualizar Datos"  Clicked="ActualizarNtn_Clicked"/>
+                    <Button x:Name="pagosBtn" HorizontalOptions="Start" BackgroundColor="Transparent"  Text="Realizar Pagos"  Clicked="PagosBtn_Clicked"/>
+                    <Button x:Name="contactoBtn" HorizontalOptions="Start" BackgroundColor="Transparent"  Text="Contactenos" Clicked="ContactoBtn_Clicked"/>
+                    <Button x:Name="CerrarSesion" HorizontalOptions="Start" BackgroundColor="Transparent"   Clicked="CerrarSesion_Clicked" Text="Cerrar Session"/>
                 </StackLayout>
             </Grid>
         </ScrollView>

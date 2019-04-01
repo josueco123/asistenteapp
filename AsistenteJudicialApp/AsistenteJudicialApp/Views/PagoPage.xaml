@@ -10,14 +10,14 @@
                     <StackLayout Orientation="Vertical">
                         <Label Text="Precios" FontAttributes="Bold" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
                         <Label Text="$2.000 mensual por cada proceso" FontSize="Small" TextColor="Black"/>
-                        <Label Text="Te hacemos un descuentos si tienes más de 20 procesos registrados" FontSize="Small" TextColor="Black"/>
+                        <Label Text="Te hacemos descuentos si tienes más de 30 procesos registrados" FontSize="Small" TextColor="Black"/>
                         <Label x:Name="cantidaLabel"  FontSize="Small" TextColor="Black"/>
 
                     </StackLayout>
                 </Frame>
                 <Frame>
                     <StackLayout Orientation="Vertical">
-                        <Label Text="Recibir Correo con datos para pago" FontAttributes="Bold" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
+                        <Label Text="Recibir Correo con Información de Pago" FontAttributes="Bold" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
                         <Label Text="Recuerda tener acualizados tus datos adicionales de contacto para comunicarnos en caso de presentarse algun inconvenientes"  FontSize="Small" TextColor="Black"/>
                         <Button Text="Enviar" x:Name="recibirBtn"  BackgroundColor="#061d34" BorderRadius="20" TextColor="White"  />
                     </StackLayout>

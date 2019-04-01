@@ -65,24 +65,12 @@ namespace AsistenteJudicialApp.Views
             }
 
 
-            if (string.IsNullOrEmpty(demandadoEntry.Text))
-            {
-                await DisplayAlert("Error", "Debe ingresar un Demandado", "Aceptar");
-                demandadoEntry.Focus();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(demandanteEntry.Text))
-            {
-                await DisplayAlert("Error", "Debe ingresar un Demandante", "Aceptar");
-                demandanteEntry.Focus();
-                return;
-            }
+            
 
             ProcesoManager manager = new ProcesoManager();
             try
             {                
-                manager.saveProcesoUser(radicacion, demandanteEntry.Text, demandadoEntry.Text, juzgadoProceso, userid);
+                manager.saveProcesoUser(radicacion, juzgadoProceso, userid);
                 //var res = await manager.saveProceso(radicacionEntry.Text, demandanteEntry.Text, demandadoEntry.Text, juzgadoProceso);
                 await DisplayAlert("Listo", "Proceso agregado Correctamente", "Aceptar");
                 await Navigation.PushAsync(new MainPage());
@@ -103,9 +91,32 @@ namespace AsistenteJudicialApp.Views
             laborales.Add("Juzgado Primero Laboral");
             laborales.Add("Juzgado Segundo Laboral");
             laborales.Add("Juzgado Tercero Laboral");
+            laborales.Add("Juzgado Cuarto Laboral");
+            laborales.Add("Juzgado Quinto Laboral");
+            laborales.Add("Juzgado Sexto Laboral");
+            laborales.Add("Juzgado Septimo Laboral");
+            laborales.Add("Juzgado Octavo Laboral");
+            laborales.Add("Juzgado Noveno Laboral");
+            laborales.Add("Juzgado Decimo Laboral");
+            laborales.Add("Juzgado Once Laboral");
+            laborales.Add("Juzgado Doce Laboral");
+            laborales.Add("Juzgado Trece Laboral");
+            laborales.Add("Juzgado Catorce Laboral");
+            laborales.Add("Juzgado Quince Laboral");
+            laborales.Add("Juzgado Diesiseis Laboral");
+            laborales.Add("Juzgado Diesisiete Laboral");
+            laborales.Add("Juzgado Diesiocho Laboral");
             juzgados = new List<Juzgado>();
-            juzgados.Add(new Juzgado { name = "juzgados civiles", numero = civiles });
-            juzgados.Add(new Juzgado { name = "juzgados Laborales", numero = laborales });
+            juzgados.Add(new Juzgado { name = "Juzgados Civiles Municipales", numero = civiles });
+            juzgados.Add(new Juzgado { name = "Juzgados Civiles del Circuito", numero = civiles });
+            juzgados.Add(new Juzgado { name = "Juzgados Laborales", numero = laborales });
+            juzgados.Add(new Juzgado { name = "Juzgados de Familia ", numero = laborales });
+            juzgados.Add(new Juzgado { name = "Tribunal Superior Cali", numero = laborales });
+            juzgados.Add(new Juzgado { name = "Juzgados de Pequeñas Causas Laborales", numero = laborales });
+            juzgados.Add(new Juzgado { name = "Juzgados Administrativos de Oralidad", numero = laborales });
+            juzgados.Add(new Juzgado { name = "Juzgados Administrativos del Circuito", numero = laborales });
+            juzgados.Add(new Juzgado { name = "Juzgados Civiles Municipales de Ejecucion", numero = laborales });
+            juzgados.Add(new Juzgado { name = "Juzgados Civiles del Circuito de Ejecucion", numero = civiles });
 
             foreach (var juzgado in juzgados)
             {

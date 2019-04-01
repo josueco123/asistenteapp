@@ -15,10 +15,7 @@
                         <Picker x:Name="juzgadoTipo" SelectedIndexChanged="JuzgadoTipo_SelectedIndexChanged"  />
                         <Label Text="Numero de Juzgado" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
                         <Picker x:Name="juzgadoNumero" SelectedIndexChanged="JuzgadoNumero_SelectedIndexChanged" />
-                        <Label Text="Demandante" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
-                        <Entry x:Name="demandanteEntry" Keyboard="Text"/>
-                        <Label Text="Demandado" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
-                        <Entry x:Name="demandadoEntry" Keyboard="Text"/>
+                        
                         <Button BackgroundColor="#061d34" BorderRadius="20" TextColor="White" x:Name="guadarProceso" Text="Guardar Proceso" Clicked="GuadarProceso_Clicked" />
                     </StackLayout>
                 </Frame>

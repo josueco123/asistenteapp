@@ -16,8 +16,7 @@ namespace AsistenteJudicialApp.Views
 	{
         
         UserManager userManager;
-        User user;
-        Userdato userdato;
+        User user;        
         DatosManager manager;
         int idUser;
 		public ActulizarDatosPage ()
@@ -34,18 +33,18 @@ namespace AsistenteJudicialApp.Views
         {
             try
             {
-                //var datos = await manager.getDatos(id);
+                var datos = await manager.getDatos(id);
                 user = await userManager.getUser(id);
 
                 nombreEntry.Text = user.name;                
                 correoEntry.Text = user.email;
 
-                /*if(!(datos == null))
+                if(!(datos == null))
                 {
                     cedulaEntry.Text = datos.identificacion;
                     telefonoEntry.Text = datos.telefono;
                     direccionEntry.Text = datos.direccion;
-                }*/
+                }
                
             }
             catch 
@@ -59,8 +58,11 @@ namespace AsistenteJudicialApp.Views
         {
             try
             {
-                userManager.updateUser(idUser, nombreEntry.Text, correoEntry.Text);                
-                await DisplayAlert("Perfecto", "Datos Actualizados", "Aceptar");
+                userManager.updateUser(idUser, nombreEntry.Text, correoEntry.Text);
+                App.Current.Properties["name"] = nombreEntry.Text;                
+                App.Current.Properties["Email"] = correoEntry.Text;
+                await App.Current.SavePropertiesAsync();
+                await DisplayAlert("Excelente", "Datos Actualizados", "Aceptar");
                 await Navigation.PushAsync(new MainPage());
 
             }

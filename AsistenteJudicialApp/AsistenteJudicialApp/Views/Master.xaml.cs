@@ -16,18 +16,25 @@ namespace AsistenteJudicialApp.Views
 		{
 			InitializeComponent ();
             nameLabel.Text = App.Current.Properties["name"].ToString();
+            
 
         }
 
         private async void CerrarSesion_Clicked(object sender, EventArgs e)
         {
-            App.Current.Properties["IsLoggedIn"] = Boolean.FalseString;
-            App.Current.Properties["name"] = string.Empty;
-            App.Current.Properties["UserId"] = string.Empty;
-            App.Current.Properties["Email"] = string.Empty;
-            await App.Current.SavePropertiesAsync();
+            bool answer = await DisplayAlert("¿Estas Seguro?", "Si cierras tu session no te llegaran notificaciones por la app", "Si", "No");
 
-            await Navigation.PushAsync(new LoginPage());
+            if (answer)
+            {
+                App.Current.Properties["IsLoggedIn"] = Boolean.FalseString;
+                App.Current.Properties["name"] = string.Empty;
+                App.Current.Properties["UserId"] = string.Empty;
+                App.Current.Properties["Email"] = string.Empty;
+                await App.Current.SavePropertiesAsync();
+
+                await Navigation.PushAsync(new LoginPage());
+            }
+            
         }
 
         private async void NotificacionesNtn_Clicked(object sender, EventArgs e)

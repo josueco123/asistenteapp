@@ -5,9 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.Xaml;
 
 namespace AsistenteJudicialApp.Views
@@ -30,7 +32,7 @@ namespace AsistenteJudicialApp.Views
 
             if (!HayConexion())
             {                
-                await DisplayAlert("Atencion", "No tienes conexion a internet para revisar y hacer modificaciones", "Aceptar");
+                await DisplayAlert("", "No tienes conexion a internet para revisar y hacer modificaciones", "Aceptar");
             }
 
             try
@@ -45,7 +47,7 @@ namespace AsistenteJudicialApp.Views
                     await App.Current.SavePropertiesAsync();
                 }
             }
-            catch (Exception ex)
+            catch 
             {
 
             }
@@ -69,7 +71,15 @@ namespace AsistenteJudicialApp.Views
 
         protected override bool OnBackButtonPressed()
         {
-            return true;
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                var result = await DisplayAlert("", "¿Quieres salir de la aplicación?", "Sí", "No");
+                if (result)
+                {                    
+                    Environment.Exit(1); 
+                }
+            });
+            return true;            
         }
 
         private async void LstProcesos_ItemTapped(object sender, ItemTappedEventArgs e)

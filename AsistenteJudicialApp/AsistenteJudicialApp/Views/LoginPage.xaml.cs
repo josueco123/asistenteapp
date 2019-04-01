@@ -54,7 +54,7 @@ namespace AsistenteJudicialApp.Views
                 RegisterNotifications registerNotifications = new RegisterNotifications();
                 await Navigation.PushAsync(new MainPage());
             }
-            catch (Exception ex)
+            catch 
             {
                 await DisplayAlert("Error", "Email o contraseña incorretos ", "Aceptar");
                 login.IsEnabled = true;

@@ -35,7 +35,7 @@ namespace AsistenteJudicialApp.Views
                 {
                     lstNotificaciones.ItemsSource = informes;
                 }
-            }catch(Exception ex)
+            }catch
             {
 
             }

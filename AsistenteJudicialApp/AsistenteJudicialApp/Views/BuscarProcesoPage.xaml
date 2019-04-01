@@ -9,7 +9,8 @@
                 <Frame>
                     <StackLayout Orientation="Vertical">
                         <Label Text="Radicacion" FontAttributes="Bold" FontSize="Medium"  TextColor="Black" />
-                        <Entry x:Name="radicacionEntry" Keyboard="Numeric" MaxLength="23" />
+                        <Entry x:Name="radicacionEntry" Keyboard="Numeric" MaxLength="7" />
+                        <Label Text="Ingresa los ultimos 7 numeros de la radicacion" FontSize="Small" />
                         <Button BackgroundColor="#061d34" BorderRadius="20" TextColor="White" x:Name="buscarProceso" Text="Buscar Proceso" Clicked="BuscarProceso_Clicked" />
                     </StackLayout>
                 </Frame>

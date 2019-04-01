@@ -67,13 +67,18 @@ namespace AsistenteJudicialApp.Views
                 RegisterNotifications registerNotifications = new RegisterNotifications();
                 await Navigation.PushAsync(new MainPage());
             }
-            catch(Exception ex)
+            catch
             {
                 continuarBtn.IsEnabled = true;
                 await DisplayAlert("Lo sentimos", "Registro no realizado", "Aceptar");
             }
             
 
+        }
+
+        private void TerminosBtn_Clicked(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("http://asistententejudicial.com/docs/Terminos%20y%20Condiciones%20Asistente%20Judicial.pdf"));
         }
     }
 }

@@ -86,6 +86,8 @@ namespace AsistenteJudicialApp.Managers
             return null;
         }
 
+
+
         public async Task<IEnumerable<Estado>> getEstados(string id)
         {
             String URL = "http://asistententejudicial.com/estados/" + id;
@@ -107,6 +109,16 @@ namespace AsistenteJudicialApp.Managers
         public async void addProcesoUser(string id, string radicacion)
         {
             String URL = "http://asistententejudicial.com/save/proceso/" + radicacion + "/" + id;
+
+            HttpClient client = htclient.getCliente();
+
+            var res = await client.GetAsync(URL);
+
+        }
+
+        public async void detachProcesoUser(string user_id, string proceso_id)
+        {
+            String URL = "http://asistententejudicial.com/delete/proceso/" + user_id + "/" + proceso_id;
 
             HttpClient client = htclient.getCliente();
 
@@ -142,7 +154,7 @@ namespace AsistenteJudicialApp.Managers
             //return result;
         }
 
-        public async void saveProcesoUser(string radicacion, string demandante, string demandado, string juzgado,string id)
+        public async void saveProcesoUser(string radicacion, string juzgado,string id)
         {
 
             HttpClient client = new HttpClient();
@@ -153,9 +165,7 @@ namespace AsistenteJudicialApp.Managers
 
             Proceso proceso = new Proceso();
 
-            proceso.radicacion = radicacion;
-            proceso.demandado = demandado;
-            proceso.demandante = demandante;
+            proceso.radicacion = radicacion;            
             proceso.juzgado = juzgado;
 
             string json = JsonConvert.SerializeObject(proceso);

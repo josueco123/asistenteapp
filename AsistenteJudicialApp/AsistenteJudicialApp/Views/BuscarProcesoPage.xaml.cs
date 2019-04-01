@@ -35,7 +35,7 @@ namespace AsistenteJudicialApp.Views
                 }
                 else
                 {
-                    await DisplayAlert("", "Por favor reganalos los datos tu proceso para la revision", "aceptar");
+                    await DisplayAlert("", "Por favor Cuentanos en que Juzgado se encuentra tu proceso", "Aceptar");
                     await Navigation.PushAsync(new AgregarProcesoPage(radicacionEntry.Text));
                 }
             }

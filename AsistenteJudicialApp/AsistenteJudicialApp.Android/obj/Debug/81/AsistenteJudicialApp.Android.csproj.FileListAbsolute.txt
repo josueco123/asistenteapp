@@ -136,8 +136,6 @@ D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.A
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\mipmap-xxxhdpi\ic_launcher.png
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\drawable\icn.png
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\layout\rounded_shape.xml.xml
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp\bin\Debug\netstandard2.0\AsistenteJudicialApp.dll
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\AsistenteJudicialApp.dll.mdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\AsistenteJudicialApp.dll.mdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\Plugin.Notifications.dll.mdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\SQLite-net.dll.mdb

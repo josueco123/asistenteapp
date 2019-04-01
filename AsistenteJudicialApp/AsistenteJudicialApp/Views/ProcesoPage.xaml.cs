@@ -2,6 +2,7 @@
 using AsistenteJudicialApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,7 +46,26 @@ namespace AsistenteJudicialApp.Views
                     lstEstado.ItemsSource = response;
                 }
             }
-            catch(Exception ex) { }
+            catch { }
+        }
+
+        private async void DeleteBtn_Clicked(object sender, EventArgs e)
+        {
+            bool answer = await DisplayAlert("Confirma", "¿Estas seguro de que ya no deseas recibir notificaciones sobre este proceso?", "Si", "No");
+
+            if (answer)
+            {
+                try
+                {
+                    manager.detachProcesoUser(user_id,proceso_id);
+                    await DisplayAlert("Listo", "Proceso quitado correctamente ", "Aceptar");
+                    await Navigation.PushAsync(new MainPage());
+                }
+                catch
+                {
+                    await DisplayAlert("Error", "No se pudo quitar el proceso, por favor intenta mas tarde", "Aceptar");
+                }
+            }
         }
 
         private async void SolicitarBtn_Clicked(object sender, EventArgs e)
@@ -58,9 +78,9 @@ namespace AsistenteJudicialApp.Views
                 await DisplayAlert("Listo", "Solicitud enviada pronto enviaremos el auto al correo", "Aceptar");
                 solicitarBtn.IsEnabled = true;
             }
-            catch(Exception ex)
+            catch
             {
-                await DisplayAlert("Error", "Solicitud no realizasa", "Aceptar");
+                await DisplayAlert("Error", "Solicitud no realizada", "Aceptar");
                 solicitarBtn.IsEnabled = true;
             }
         }

@@ -19,7 +19,7 @@ namespace AsistenteJudicialApp.Views
 
         private void TerminosBtn_Clicked(object sender, EventArgs e)
         {
-            Device.OpenUri(new Uri("https://www.google.com.co/"));
+            Device.OpenUri(new Uri("http://asistententejudicial.com/docs/Terminos%20y%20Condiciones%20Asistente%20Judicial.pdf"));
         }
     }
 }

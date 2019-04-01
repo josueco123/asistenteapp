@@ -9,7 +9,7 @@
             <StackLayout Padding="10" Spacing="10" BackgroundColor="LightGray">
                 <Frame>
                     <StackLayout Orientation="Vertical">
-                        <Label Text="Nombre" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
+                        <Label Text="Nombre y Apellidos" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
                         <Entry x:Name="nombreEntry" Keyboard="Text" />
                         
                         <Label Text="Correo" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
@@ -24,7 +24,7 @@
                         <Label Text="Cedula" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
                         <Entry x:Name="cedulaEntry" Keyboard="Numeric"/>
                         <Label Text="Celular" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
-                        <Entry x:Name="telefonoEntry" Keyboard="Telephone" />
+                        <Entry x:Name="telefonoEntry" Keyboard="Telephone" MaxLength="10" />
                         <Label Text="Direccion" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
                         <Entry x:Name="direccionEntry" Keyboard="Text"/>
                         <Button x:Name="contactoBtn" Text="Actulizar" BackgroundColor="#061d34" BorderRadius="20" TextColor="White" Clicked="ContactoBtn_Clicked"/>
