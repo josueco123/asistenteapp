@@ -7,18 +7,15 @@
         <ToolbarItem Text="Actualizar" Order="Primary" Clicked="LstProcesos_Refreshing"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <ScrollView>
+        <StackLayout>
             
             <StackLayout Padding="10" Spacing="10" BackgroundColor="LightGray">
                 <Frame>
                     <StackLayout Orientation="Vertical">
-                        <Button x:Name="agregarProceso" BackgroundColor="#061d34" BorderRadius="20" TextColor="White" Text="Agregar Proceso" Clicked="AgregarProceso_Clicked"/>
-                    </StackLayout>
-                </Frame>
-                <Frame>
-                    <StackLayout Orientation="Vertical">
+                        <Button x:Name="agregarProceso" BackgroundColor="#0a3157" BorderRadius="20" TextColor="White" Text="Agregar Proceso" Clicked="AgregarProceso_Clicked"/>
+                   
                         <Label Text="Lista de Procesos" FontAttributes="Bold" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
-                        <ListView   x:Name="lstProcesos" HasUnevenRows="True" ItemTapped="LstProcesos_ItemTapped" IsPullToRefreshEnabled="True" Refreshing="LstProcesos_Refreshing" ListView.RowHeight="150">
+                        <ListView   x:Name="lstProcesos" HasUnevenRows="True" ItemTapped="LstProcesos_ItemTapped" ListView.RowHeight="150">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <ViewCell>
@@ -35,6 +32,6 @@
                     </StackLayout>
                 </Frame>
             </StackLayout>
-        </ScrollView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

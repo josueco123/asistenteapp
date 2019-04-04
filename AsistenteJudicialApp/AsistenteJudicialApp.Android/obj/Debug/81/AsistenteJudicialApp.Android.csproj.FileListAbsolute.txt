@@ -43,6 +43,13 @@ D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.A
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\mipmap-xxhdpi\launcher_foreground.png
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\mipmap-xxxhdpi\icon.png
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\mipmap-xxxhdpi\launcher_foreground.png
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\mipmap-hdpi\ic_launcher.png
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\mipmap-mdpi\ic_launcher.png
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\mipmap-xhdpi\ic_launcher.png
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\mipmap-xxhdpi\ic_launcher.png
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\mipmap-xxxhdpi\ic_launcher.png
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\drawable\icn.png
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\layout\rounded_shape.xml.xml
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\R.cs.flag
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\R.txt
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\uploadflags.txt
@@ -50,6 +57,7 @@ D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.A
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\Mono.Android.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\mscorlib.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\Newtonsoft.Json.pdb
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\Plugin.Notifications.Abstractions.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\System.Core.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\System.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\System.Xml.pdb
@@ -68,8 +76,6 @@ D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.A
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\System.ServiceModel.Internals.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\System.Web.Services.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\Mono.Security.pdb
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\AsistenteJudicialApp.dll.mdb
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\Plugin.Notifications.Abstractions.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\AsistenteJudicialApp.Android.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\FormsViewGroup.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\Mono.Android.pdb
@@ -94,6 +100,7 @@ D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.A
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\System.ServiceModel.Internals.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\System.Web.Services.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\Mono.Security.pdb
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\AsistenteJudicialApp.dll.mdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\Plugin.Notifications.dll.mdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\SQLite-net.dll.mdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\XamarinShortcutBadger.dll.mdb
@@ -129,13 +136,8 @@ D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.A
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\mipmap-hdpi\ic_launcher.png
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\mipmap-mdpi\ic_launcher.png
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\mipmap-xhdpi\ic_launcher.png
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\mipmap-xxhdpi\ic_launcher.png
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\mipmap-xxxhdpi\ic_launcher.png
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\drawable\icn.png
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\layout\rounded_shape.xml.xml
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp\bin\Debug\netstandard2.0\AsistenteJudicialApp.dll
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\AsistenteJudicialApp.dll.mdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\AsistenteJudicialApp.dll.mdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\Plugin.Notifications.dll.mdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\SQLite-net.dll.mdb

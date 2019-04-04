@@ -46,10 +46,11 @@ namespace AsistenteJudicialApp.Views
 
                 login.IsEnabled = true;
                 indicator.IsRunning = false;
-                App.Current.Properties["IsLoggedIn"] = Boolean.TrueString;
+                
                 App.Current.Properties["name"] = res.name.ToString();
                 App.Current.Properties["UserId"] = res.id.ToString();
                 App.Current.Properties["Email"] = res.email.ToString();
+                App.Current.Properties["IsLoggedIn"] = Boolean.TrueString;
                 await App.Current.SavePropertiesAsync();
                 RegisterNotifications registerNotifications = new RegisterNotifications();
                 await Navigation.PushAsync(new MainPage());

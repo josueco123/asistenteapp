@@ -14,8 +14,8 @@
                         
                         <Label Text="Correo" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
                         <Entry x:Name="correoEntry"  Keyboard="Email" />
-                        
-                        <Button x:Name="actulizarBtn" Text="Actulizar" BackgroundColor="#061d34" BorderRadius="20" TextColor="White" Clicked="ActulizarBtn_Clicked"/>
+
+                        <Button x:Name="actulizarBtn" Text="Actulizar" BackgroundColor="#0a3157" BorderRadius="20" TextColor="White" Clicked="ActulizarBtn_Clicked"/>
                     </StackLayout>
                 </Frame>
                 <Frame>
@@ -27,7 +27,7 @@
                         <Entry x:Name="telefonoEntry" Keyboard="Telephone" MaxLength="10" />
                         <Label Text="Direccion" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
                         <Entry x:Name="direccionEntry" Keyboard="Text"/>
-                        <Button x:Name="contactoBtn" Text="Actulizar" BackgroundColor="#061d34" BorderRadius="20" TextColor="White" Clicked="ContactoBtn_Clicked"/>
+                        <Button x:Name="contactoBtn" Text="Actulizar" BackgroundColor="#0a3157" BorderRadius="20" TextColor="White" Clicked="ContactoBtn_Clicked"/>
                     </StackLayout>
                 </Frame>
             </StackLayout>

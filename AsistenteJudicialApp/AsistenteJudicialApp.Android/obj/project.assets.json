@@ -779,6 +779,7 @@
         "lib/MonoAndroid10/Plugin.Notifications.Abstractions.dll",
         "lib/MonoAndroid10/Plugin.Notifications.Abstractions.pdb",
         "lib/MonoAndroid10/Plugin.Notifications.dll",
+        "lib/MonoAndroid10/Plugin.Notifications.dll.mdb",
         "lib/MonoAndroid10/Plugin.Notifications.pdb",
         "lib/Xamarin.Mac20/Plugin.Notifications.Abstractions.dll",
         "lib/Xamarin.Mac20/Plugin.Notifications.Abstractions.pdb",
@@ -979,6 +980,7 @@
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/MonoAndroid10/XamarinShortcutBadger.dll",
+        "lib/MonoAndroid10/XamarinShortcutBadger.dll.mdb",
         "lib/MonoAndroid10/XamarinShortcutBadger.pdb",
         "xamarin.android.shortcutbadger.1.1.809.nupkg.sha512",
         "xamarin.android.shortcutbadger.nuspec"

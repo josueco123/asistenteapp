@@ -3,11 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AsistenteJudicialApp.Views.ProcesoPage"
              Title="Proceso">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Quitar" Order="Primary" x:Name="deleteBtn" Clicked="DeleteBtn_Clicked" />
+    <ContentPage.ToolbarItems >
+        <ToolbarItem Text="Solicitar Auto" Order="Secondary" Priority="0" x:Name="solicitarBtn" Clicked="SolicitarBtn_Clicked"/>
+        <ToolbarItem Text="Quitar" Order="Secondary" Priority="1" x:Name="deleteBtn" Clicked="DeleteBtn_Clicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <ScrollView>
+        <StackLayout>
             <StackLayout Padding="10" Spacing="10" BackgroundColor="LightGray">
                 <Frame>
                     <StackLayout Orientation="Vertical">
@@ -21,14 +22,7 @@
                         <Label x:Name="demandado" FontSize="Medium" TextColor="Black"/>
                     </StackLayout>
                 </Frame>
-                <Frame>
-                    <StackLayout Orientation="Vertical">
-                        <Label Text="Solicitar Auto reciente" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
-                        <Label Text="¿Tienes alguna obsevacion por hacernos saber?"  FontSize="Small" TextColor="Black"/>
-                        <Entry x:Name="observacionesEntry" />
-                        <Button Text="Solicitar" x:Name="solicitarBtn"  BackgroundColor="#061d34" BorderRadius="20" TextColor="White" Clicked="SolicitarBtn_Clicked" />
-                    </StackLayout>
-                </Frame>
+                
                 <Frame>
                     <StackLayout Orientation="Vertical">
                         <Label Text="Estados" FontAttributes="Bold" FontSize="Large" TextColor="Black"/>
@@ -47,6 +41,6 @@
                     </StackLayout>
                 </Frame>
             </StackLayout>
-        </ScrollView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

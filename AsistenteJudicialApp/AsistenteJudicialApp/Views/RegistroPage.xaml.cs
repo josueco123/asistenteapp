@@ -1,4 +1,5 @@
 ﻿using AsistenteJudicialApp.Managers;
+using AsistenteJudicialApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace AsistenteJudicialApp.Views
         }
 
         private async void ContinuarBtn_Clicked(object sender, EventArgs e)
-        {
+        {           
             if (string.IsNullOrEmpty(nombreEntry.Text))
             {
                 await DisplayAlert("Error", "Debe ingresar un Nombre", "Aceptar");
@@ -48,7 +49,7 @@ namespace AsistenteJudicialApp.Views
                 passEntry2.Focus();
                 return;
             }
-
+           
             try
             {
                 continuarBtn.IsEnabled = false;
@@ -56,21 +57,22 @@ namespace AsistenteJudicialApp.Views
                 manager.saveUser(nombreEntry.Text, correoEntry.Text, passEntry.Text);
                 continuarBtn.IsEnabled = true;
 
-                await DisplayAlert("Bienvenido", "Registro realizado correctamente", "Aceptar");
-                
-                var res = await manager.loginUser(correoEntry.Text, passEntry.Text);
+                /*User user = await manager.loginUser(correoEntry.Text, passEntry.Text);
+                App.Current.Properties["UserId"] = user.id;
+                App.Current.Properties["name"] = user.name;                
+                App.Current.Properties["Email"] = user.email;
                 App.Current.Properties["IsLoggedIn"] = Boolean.TrueString;
-                App.Current.Properties["name"] = res.name.ToString();
-                App.Current.Properties["UserId"] = res.id.ToString();
-                App.Current.Properties["Email"] = res.email.ToString();
                 await App.Current.SavePropertiesAsync();
                 RegisterNotifications registerNotifications = new RegisterNotifications();
-                await Navigation.PushAsync(new MainPage());
+                */
+
+                await DisplayAlert("Bienvenido", "Registro realizado correctamente, confirma tus datos iniciando session", "Aceptar");
+                await Navigation.PushAsync(new LoginPage());
             }
-            catch
+            catch(Exception ex)
             {
                 continuarBtn.IsEnabled = true;
-                await DisplayAlert("Lo sentimos", "Registro no realizado", "Aceptar");
+                await DisplayAlert("Lo sentimos", ex.ToString(), "Aceptar");
             }
             
 

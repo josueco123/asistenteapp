@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.SuecoApps.AsistenteJudicialApp">
-  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.SuecoApps.AsistenteJudicialApp" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="26" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <permission android:name="com.SuecoApps.AsistenteJudicialApp.permission.C2D_MESSAGE" />
@@ -10,7 +10,7 @@
   <uses-permission android:name="android.permission.WAKE_LOCK" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.VIBRATE" />
-  <application android:label="AsistenteJudicialApp.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:debuggable="true">
+  <application android:label="AsistenteJudicialApp.Android" android:icon="@drawable/icn" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/ic_launcher" android:label="AsistenteJudicialApp" android:theme="@style/MainTheme" android:name="md5ae21be64538b5c3bb5e79c6ce9cc491b.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

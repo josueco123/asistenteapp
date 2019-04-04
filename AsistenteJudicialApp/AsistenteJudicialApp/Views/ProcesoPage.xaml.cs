@@ -70,18 +70,23 @@ namespace AsistenteJudicialApp.Views
 
         private async void SolicitarBtn_Clicked(object sender, EventArgs e)
         {
-            try
+            bool answer = await DisplayAlert("", "¿Desea recibir el auto reciente del proceso? Recuerda que solo enviamos autos de publicados en esta semana", "Sí", "No");
+
+            if (answer)
             {
-                solicitarBtn.IsEnabled = false;
-                SolicitudManager manager = new SolicitudManager();
-                manager.saveSolicitud(user_id, proceso_id, observacionesEntry.Text);
-                await DisplayAlert("Listo", "Solicitud enviada pronto enviaremos el auto al correo", "Aceptar");
-                solicitarBtn.IsEnabled = true;
-            }
-            catch
-            {
-                await DisplayAlert("Error", "Solicitud no realizada", "Aceptar");
-                solicitarBtn.IsEnabled = true;
+                try
+                {
+
+                    SolicitudManager manager = new SolicitudManager();
+                    manager.saveSolicitud(user_id, proceso_id, string.Empty);
+                    await DisplayAlert("Listo", "Solicitud enviada pronto enviaremos el auto al correo", "Aceptar");
+
+                }
+                catch
+                {
+                    await DisplayAlert("Error", "Solicitud no realizada", "Aceptar");
+
+                }
             }
         }
     }
