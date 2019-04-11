@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AsistenteJudicialApp.Managers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,29 @@ namespace AsistenteJudicialApp.Views
         {
             await Navigation.PushAsync(new PagoPSEPage());
 
+        }
+
+        private async void RecibirBtn_Clicked(object sender, EventArgs e)
+        {
+            recibirBtn.IsEnabled = false;
+            string id = App.Current.Properties["UserId"].ToString();
+            string num = App.Current.Properties["procesos"].ToString();
+            try
+            {
+                UserManager manager = new UserManager();
+                manager.infoPagos(id, num);
+                recibirBtn.IsEnabled = true;
+                await DisplayAlert("Listo", "Te hemos enviado un correo con la informacion para que realizces tu pago", "Aceptar");
+                
+            }
+            catch(Exception ex)
+            {
+                recibirBtn.IsEnabled = true;
+                await DisplayAlert("Listo", ex.ToString(), "Aceptar");
+                
+            }
+           
+           
         }
     }
 }

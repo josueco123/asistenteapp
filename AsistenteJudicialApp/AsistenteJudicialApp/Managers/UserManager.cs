@@ -99,6 +99,24 @@ namespace AsistenteJudicialApp.Managers
 
             var response = await client.PostAsync(URL, content);
         }
+
+        public async void changePass(string email)
+        {
+            String URL = "http://asistententejudicial.com/send/pass/" + email;
+
+            HttpClient client = htclient.getCliente();
+
+            var res = await client.GetAsync(URL);
+        }
+
+        public async void infoPagos(string id, string num)
+        {
+            String URL = "http://asistententejudicial.com/pago/" + id + "/"+ num;
+
+            HttpClient client = htclient.getCliente();
+
+            var res = await client.GetAsync(URL);
+        }
        
     }
 }

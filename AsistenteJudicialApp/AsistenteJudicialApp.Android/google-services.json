@@ -1,39 +1,37 @@
 {
   "project_info": {
-    "project_number": "848235180958",
-    "firebase_url": "https://asistentejudicial-4ba36.firebaseio.com",
-    "project_id": "asistentejudicial-4ba36",
-    "storage_bucket": "asistentejudicial-4ba36.appspot.com"
+    "project_number": "1019078643370",
+    "firebase_url": "https://asistente-22743.firebaseio.com",
+    "project_id": "asistente-22743",
+    "storage_bucket": "asistente-22743.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:848235180958:android:426b7f33c3412f79",
+        "mobilesdk_app_id": "1:1019078643370:android:426b7f33c3412f79",
         "android_client_info": {
           "package_name": "com.SuecoApps.AsistenteJudicialApp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "848235180958-6j0dtcfehgts53q43vf0749n6e8schoh.apps.googleusercontent.com",
+          "client_id": "1019078643370-8msfhuv7pl3f938023oibo63iffcv5he.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB-aPZDmcI-YjctG6Aa9djpGYePJi2zjGo"
+          "current_key": "AIzaSyB2OkF7ni0Ap2tKNe7FqVkedmTHFesWqg0"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019078643370-8msfhuv7pl3f938023oibo63iffcv5he.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

@@ -32,11 +32,10 @@
 
                 <Button Text="Registrarse" BackgroundColor="#0a3157" BorderRadius="20" TextColor="White" x:Name="registroBtn" Clicked="RegistroBtn_Clicked"/>
 
-                <Button Text="Recuperar Contraseña" BackgroundColor="Transparent"/>
             </StackLayout>
 
-            <StackLayout Grid.Row="2" Padding="0,0">
-
+            <StackLayout Grid.Row="2" Padding="20,20">
+                <Button Text="Recuperar Contraseña" BackgroundColor="Transparent" x:Name="resetpass" Clicked="Resetpass_Clicked"/>
             </StackLayout>
         </Grid>
         

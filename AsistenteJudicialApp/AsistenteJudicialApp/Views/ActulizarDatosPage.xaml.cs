@@ -56,6 +56,19 @@ namespace AsistenteJudicialApp.Views
 
         private async void ActulizarBtn_Clicked(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(nombreEntry.Text))
+            {
+                await DisplayAlert("Error", "Debe ingresar tu nombre", "Aceptar");
+                nombreEntry.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(correoEntry.Text))
+            {
+                await DisplayAlert("Error", "Debe ingresar un correo", "Aceptar");
+                correoEntry.Focus();
+                return;
+            }
             try
             {
                 userManager.updateUser(idUser, nombreEntry.Text, correoEntry.Text);
@@ -74,7 +87,27 @@ namespace AsistenteJudicialApp.Views
 
         private async void ContactoBtn_Clicked(object sender, EventArgs e)
         {
-            
+            if (string.IsNullOrEmpty(cedulaEntry.Text))
+            {
+                await DisplayAlert("Error", "Debe ingresar tu Identificacion", "Aceptar");
+                cedulaEntry.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(telefonoEntry.Text))
+            {
+                await DisplayAlert("Error", "Debe ingresar tu numero celular", "Aceptar");
+                telefonoEntry.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(direccionEntry.Text))
+            {
+                await DisplayAlert("Error", "Debe ingresar tu direccion", "Aceptar");
+                direccionEntry.Focus();
+                return;
+            }
+
 
             try
             {

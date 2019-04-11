@@ -22,6 +22,12 @@ namespace AsistenteJudicialApp.Views
 
         private async void BuscarProceso_Clicked(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(radicacionEntry.Text)){             
+                await DisplayAlert("Error", "Debe ingresar un numero de radicacion", "Aceptar");
+                radicacionEntry.Focus();
+                return;
+            }
+
             try
             {
                 buscarProceso.IsEnabled = false;
@@ -29,6 +35,8 @@ namespace AsistenteJudicialApp.Views
                 buscarProceso.IsEnabled = true;
                 if (!(response == null))
                 {
+                    agregarProceso.IsEnabled = true;
+
                     juzgadoLabel.Text = response.juzgado;
                     demandanteLabel.Text = response.demandante;
                     demandadoLabel.Text = response.demandado;

@@ -76,6 +76,9 @@ namespace AsistenteJudicialApp.Views
             return true;
         }
 
-       
+        private async void Resetpass_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ClavePage());
+        }
     }
 }

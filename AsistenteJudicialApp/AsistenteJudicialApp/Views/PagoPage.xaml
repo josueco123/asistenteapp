@@ -19,7 +19,7 @@
                     <StackLayout Orientation="Vertical">
                         <Label Text="Recibir Correo con Información de Pago" FontAttributes="Bold" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
                         <Label Text="Recuerda tener acualizados tus datos adicionales de contacto para comunicarnos en caso de presentarse algun inconvenientes"  FontSize="Small" TextColor="Black"/>
-                        <Button Text="Enviar" x:Name="recibirBtn"  BackgroundColor="#0a3157" BorderRadius="20" TextColor="White"  />
+                        <Button Text="Enviar" x:Name="recibirBtn"  BackgroundColor="#0a3157" BorderRadius="20" TextColor="White" Clicked="RecibirBtn_Clicked"  />
                     </StackLayout>
                 </Frame>
                 <Frame>
