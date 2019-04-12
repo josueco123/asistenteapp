@@ -28,6 +28,12 @@ namespace AsistenteJudicialApp.Views
                 return;
             }
 
+            if (radicacionEntry.Text.Length < 7){
+                await DisplayAlert("Error", "Debes ingresar los siete ultimos numeros de la radicacion del proceso", "Aceptar");
+                radicacionEntry.Focus();
+                return;
+            }
+
             try
             {
                 buscarProceso.IsEnabled = false;

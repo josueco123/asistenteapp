@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AsistenteJudicialApp.Views.RegistroPage"
-             Title="Registro">
+             Title="Registro"
+             xmlns:behaviours ="clr-namespace:AsistenteJudicialApp">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="10" Spacing="10" BackgroundColor="LightGray">
@@ -11,7 +12,12 @@
                         <Label Text="Nombre y Apellidos" FontAttributes="Bold" FontSize="Medium" TextColor="Black"  />
                         <Entry x:Name="nombreEntry" Keyboard="Text" />
                         <Label Text="Correo" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
-                        <Entry x:Name="correoEntry" Keyboard="Email"/>
+                        <Entry x:Name="correoEntry" Keyboard="Email">
+                            <Entry.Behaviors>
+                                <behaviours:EmailValidatorBehavior/>
+                            </Entry.Behaviors>
+                        </Entry>
+                        
                         <Label Text="Contraseña" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
                         <Entry IsPassword="True" x:Name="passEntry"/>
                         <Label Text="Repetir Contraseña" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />

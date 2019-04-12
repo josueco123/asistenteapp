@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -69,6 +70,16 @@ namespace AsistenteJudicialApp.Views
                 correoEntry.Focus();
                 return;
             }
+
+            var emailPattern = "^(?(\")(\".+?(?<!\\\\)\"@)|(([0-9a-z]((\\.(?!\\.))|[-!#\\$%&'\\*\\+/=\\?\\^`\\{\\}\\|~\\w])*)(?<=[0-9a-z])@))(?(\\[)(\\[(\\d{1,3}\\.){3}\\d{1,3}\\])|(([0-9a-z][-\\w]*[0-9a-z]*\\.)+[a-z0-9][\\-a-z0-9]{0,22}[a-z0-9]))$";
+
+            if (!(Regex.IsMatch(correoEntry.Text, emailPattern)))
+            {
+                await DisplayAlert("Error", "Correo incorrecto", "Aceptar");
+                correoEntry.Focus();
+                return;
+            }
+
             try
             {
                 userManager.updateUser(idUser, nombreEntry.Text, correoEntry.Text);
@@ -97,6 +108,13 @@ namespace AsistenteJudicialApp.Views
             if (string.IsNullOrEmpty(telefonoEntry.Text))
             {
                 await DisplayAlert("Error", "Debe ingresar tu numero celular", "Aceptar");
+                telefonoEntry.Focus();
+                return;
+            }
+
+            if (telefonoEntry.Text.Length < 9)
+            {
+                await DisplayAlert("Error", "Debes ingresar un numero de telefono correcto", "Aceptar");
                 telefonoEntry.Focus();
                 return;
             }

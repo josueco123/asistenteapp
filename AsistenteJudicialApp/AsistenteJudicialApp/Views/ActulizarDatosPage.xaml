@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:asistentejudicialapp="clr-namespace:AsistenteJudicialApp"
              x:Class="AsistenteJudicialApp.Views.ActulizarDatosPage"
-             Title="Actulizar Datos">
+             Title="Actulizar Datos"
+             xmlns:behaviours ="clr-namespace:AsistenteJudicialApp">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="10" Spacing="10" BackgroundColor="LightGray">
@@ -13,7 +14,11 @@
                         <Entry x:Name="nombreEntry" Keyboard="Text" />
                         
                         <Label Text="Correo" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
-                        <Entry x:Name="correoEntry"  Keyboard="Email" />
+                        <Entry x:Name="correoEntry"  Keyboard="Email" >
+                            <Entry.Behaviors>
+                                <behaviours:EmailValidatorBehavior/>
+                            </Entry.Behaviors>
+                        </Entry>
 
                         <Button x:Name="actulizarBtn" Text="Actulizar" BackgroundColor="#0a3157" BorderRadius="20" TextColor="White" Clicked="ActulizarBtn_Clicked"/>
                     </StackLayout>
