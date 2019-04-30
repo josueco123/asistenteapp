@@ -16,7 +16,7 @@ namespace AsistenteJudicialApp.Managers
 
             HttpClient client = new HttpClient();
 
-            string URL1 = "http://asistententejudicial.com/save/solicitud";
+            string URL1 = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/save/solicitud";
 
             Solicitudes solicitud = new Solicitudes();
             solicitud.user_id = user_id;

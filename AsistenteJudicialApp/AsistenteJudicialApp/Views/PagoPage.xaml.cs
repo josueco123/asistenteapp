@@ -28,23 +28,30 @@ namespace AsistenteJudicialApp.Views
 
         private async void RecibirBtn_Clicked(object sender, EventArgs e)
         {
-            recibirBtn.IsEnabled = false;
             string id = App.Current.Properties["UserId"].ToString();
             string num = App.Current.Properties["procesos"].ToString();
-            try
+
+            bool answer = await DisplayAlert("", "¿Deseas que por este mes te revisemos estos "+ num + " procesos?", "Sí", "No");
+
+            if (answer)
             {
-                UserManager manager = new UserManager();
-                manager.infoPagos(id, num);
-                recibirBtn.IsEnabled = true;
-                await DisplayAlert("Listo", "Te hemos enviado un correo con la informacion para que realizces tu pago", "Aceptar");
-                
+                recibirBtn.IsEnabled = false;                
+                try
+                {
+                    UserManager manager = new UserManager();
+                    manager.infoPagos(id, num);
+                    recibirBtn.IsEnabled = true;
+                    await DisplayAlert("Listo", "Te hemos enviado un correo con la informacion para que realizces tu pago", "Aceptar");
+
+                }
+                catch (Exception ex)
+                {
+                    recibirBtn.IsEnabled = true;
+                    await DisplayAlert("Listo", ex.ToString(), "Aceptar");
+
+                }
             }
-            catch(Exception ex)
-            {
-                recibirBtn.IsEnabled = true;
-                await DisplayAlert("Listo", ex.ToString(), "Aceptar");
-                
-            }
+            
            
            
         }

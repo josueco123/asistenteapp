@@ -85,8 +85,42 @@ namespace AsistenteJudicialApp.Views
         void InitPickerJuzgado()
         {
             List<string> civiles = new List<string>();
-            civiles.Add("Juzgado primero Civil");
-            civiles.Add("Juzgado segundo Civil");
+            civiles.Add("Juzgado Primero Civil Municipal");
+            civiles.Add("Juzgado Segundo Civil Municipal");
+            civiles.Add("Juzgado Tercero Civil Municipal");
+            civiles.Add("Juzgado Cuarto Civil Municipal");
+            civiles.Add("Juzgado Quinto Civil Municipal");
+            civiles.Add("Juzgado Sexto Civil Municipal");
+            civiles.Add("Juzgado Septimo Civil Municipal");
+            civiles.Add("Juzgado Octavo Civil Municipal");
+            civiles.Add("Juzgado Noveno Civil Municipal");
+            civiles.Add("Juzgado Decimo Civil Municipal");
+            civiles.Add("Juzgado Once Civil Municipal");
+            civiles.Add("Juzgado Doce Civil Municipal");
+            civiles.Add("Juzgado Trece Civil Municipal");
+            civiles.Add("Juzgado Catorce Civil Municipal");
+            civiles.Add("Juzgado Quince Civil Municipal");
+            civiles.Add("Juzgado Diesiseis Civil Municipal");
+            civiles.Add("Juzgado Diecisiente Civil Municipal");
+            civiles.Add("Juzgado Diesiocho Civil Municipal");
+            civiles.Add("Juzgado Diesinueve Civil Municipal");
+            civiles.Add("Juzgado Veinte Civil Municipal");
+            civiles.Add("Juzgado Veintiuno Civil Municipal");
+            civiles.Add("Juzgado Veintidos Civil Municipal");
+            civiles.Add("Juzgado Veintitres Civil Municipal");
+            civiles.Add("Juzgado Veinticuarto Civil Municipal");
+            civiles.Add("Juzgado Veinticinco Civil Municipal");
+            civiles.Add("Juzgado Veintiseis Civil Municipal");
+            civiles.Add("Juzgado Veintisiete Civil Municipal");
+            civiles.Add("Juzgado Veintiocho Civil Municipal");
+            civiles.Add("Juzgado Veintinueve Civil Municipal");
+            civiles.Add("Juzgado Treinta Civil Municipal");
+            civiles.Add("Juzgado Treinta Y Uno Civil Municipal");
+            civiles.Add("Juzgado Treinta Y Dos Civil Municipal");
+            civiles.Add("Juzgado Treinta Y Tres Civil Municipal");
+            civiles.Add("Juzgado Treinta Y Cuatro Civil Municipal");
+            civiles.Add("Juzgado Treinta Y Cinco Civil Municipal");
+
             List<string> laborales = new List<string>();
             laborales.Add("Juzgado Primero Laboral");
             laborales.Add("Juzgado Segundo Laboral");
@@ -106,17 +140,108 @@ namespace AsistenteJudicialApp.Views
             laborales.Add("Juzgado Diesiseis Laboral");
             laborales.Add("Juzgado Diesisiete Laboral");
             laborales.Add("Juzgado Diesiocho Laboral");
+
+            List<string> civilc = new List<string>();
+            civilc.Add("Juzgado Primero Civil del Circuito");
+            civilc.Add("Juzgado Segundo Civil del Circuito");
+            civilc.Add("Juzgado Tercero Civil del Circuito");
+            civilc.Add("Juzgado Cuarto Civil del Circuito");
+            civilc.Add("Juzgado Quinto Civil del Circuito");
+            civilc.Add("Juzgado Sexto Civil del Circuito");
+            civilc.Add("Juzgado Septimo Civil del Circuito");
+            civilc.Add("Juzgado Octavo Civil del Circuito");
+            civilc.Add("Juzgado Noveno Civil del Circuito");
+            civilc.Add("Juzgado Decimo Civil del Circuito");
+            civilc.Add("Juzgado Once Civil del Circuito");
+            civilc.Add("Juzgado Doce Civil del Circuito");
+            civilc.Add("Juzgado Trece Civil del Circuito");
+            civilc.Add("Juzgado Catorce Civil del Circuito");
+            civilc.Add("Juzgado Quince Civil del Circuito");
+            civilc.Add("Juzgado Diesiseis Civil del Circuito");
+            civilc.Add("Juzgado Diesisiete Civil del Circuito");
+            civilc.Add("Juzgado Disiocho Civil del Circuito");
+            civilc.Add("Juzgado Diesinueve Civil del Circuito");
+
+            List<string> familia = new List<string>();
+            familia.Add("Juzgado Primero de Familia");
+            familia.Add("Juzgado Segundo de Familia");
+            familia.Add("Juzgado Tercero de Familia");
+            familia.Add("Juzgado Cuarto de Familia");
+            familia.Add("Juzgado Quinto de Familia");
+            familia.Add("Juzgado Sexto de Familia");
+            familia.Add("Juzgado Septimo de Familia");
+            familia.Add("Juzgado Octavo de Familia");
+            familia.Add("Juzgado Noveno de Familia");
+            familia.Add("Juzgado Decilmo de Familia");
+            familia.Add("Juzgado Once de Familia");
+            familia.Add("Juzgado Doce de Familia");
+            familia.Add("Juzgado Trece de Familia");
+            familia.Add("Juzgado Catorce de Familia");
+
+            List<string> superior = new List<string>();
+            superior.Add("Sala Laboral");
+            superior.Add("Sala Civil");
+            superior.Add("Sala Familia");
+
+            List<string> causasl = new List<string>();
+            causasl.Add("Juzgado Primero de Pequeñas Causas Laborales");
+            causasl.Add("Juzgado Segundo de Pequeñas Causas Laborales");
+            causasl.Add("Juzgado Tercero de Pequeñas Causas Laborales");
+            causasl.Add("Juzgado Cuarto de Pequeñas Causas Laborales");
+            causasl.Add("Juzgado Quinto de Pequeñas Causas Laborales");
+            causasl.Add("Juzgado Sexto de Pequeñas Causas Laborales");
+
+            List<string> amdOr = new List<string>();
+            amdOr.Add("Juzgado Primero Administrativo de Oralidad");
+            amdOr.Add("Juzgado Segundo Administrativo de Oralidad");
+            amdOr.Add("Juzgado Tercero Administrativo de Oralidad");
+            amdOr.Add("Juzgado Cuarto Administrativo de Oralidad");
+            amdOr.Add("Juzgado Quinto Administrativo de Oralidad");
+            amdOr.Add("Juzgado Sexto Administrativo de Oralidad");
+            amdOr.Add("Juzgado Septimo Administrativo de Oralidad");
+            amdOr.Add("Juzgado Octavo Administrativo de Oralidad");
+            amdOr.Add("Juzgado Noveno Administrativo de Oralidad");
+            amdOr.Add("Juzgado Decimo Administrativo de Oralidad");
+            amdOr.Add("Juzgado Once Administrativo de Oralidad");
+            amdOr.Add("Juzgado Doce Administrativo de Oralidad");
+            amdOr.Add("Juzgado Trece Administrativo de Oralidad");
+            amdOr.Add("Juzgado Catorce Administrativo de Oralidad");
+            amdOr.Add("Juzgado Quince Administrativo de Oralidad");
+            amdOr.Add("Juzgado Diesiseis Administrativo de Oralidad");
+            amdOr.Add("Juzgado Diesisiete Administrativo de Oralidad");
+            amdOr.Add("Juzgado Diesiocho Administrativo de Oralidad");
+            amdOr.Add("Juzgado Diesinueve Administrativo de Oralidad");
+            amdOr.Add("Juzgado Veinte Administrativo de Oralidad");
+            amdOr.Add("Juzgado Veintiuno Administrativo de Oralidad");
+
+            List<string> civilme = new List<string>();
+            civilme.Add("Juzgado Primero Civil Municipal de Ejecución");
+            civilme.Add("Juzgado Segundo Civil Municipal de Ejecución");
+            civilme.Add("Juzgado Tercero Civil Municipal de Ejecución");
+            civilme.Add("Juzgado Cuarto Civil Municipal de Ejecución");
+            civilme.Add("Juzgado Quinto Civil Municipal de Ejecución");
+            civilme.Add("Juzgado Sexto Civil Municipal de Ejecución");
+            civilme.Add("Juzgado Septimo Civil Municipal de Ejecución");
+            civilme.Add("Juzgado Octavo Civil Municipal de Ejecución");
+            civilme.Add("Juzgado Noveno Civil Municipal de Ejecución");
+            civilme.Add("Juzgado Decimo Civil Municipal de Ejecución");
+
+            List<string> civilce = new List<string>();
+            civilce.Add("Juzgado Primero Civil del Circuito de Ejecución");
+            civilce.Add("Juzgado Segundo Civil del Circuito de Ejecución");
+            civilce.Add("Juzgado Tercero Civil del Circuito de Ejecución");
+
             juzgados = new List<Juzgado>();
             juzgados.Add(new Juzgado { name = "Juzgados Civiles Municipales", numero = civiles });
-            juzgados.Add(new Juzgado { name = "Juzgados Civiles del Circuito", numero = civiles });
+            juzgados.Add(new Juzgado { name = "Juzgados Civiles del Circuito", numero = civilc });
             juzgados.Add(new Juzgado { name = "Juzgados Laborales", numero = laborales });
-            juzgados.Add(new Juzgado { name = "Juzgados de Familia ", numero = laborales });
-            juzgados.Add(new Juzgado { name = "Tribunal Superior Cali", numero = laborales });
-            juzgados.Add(new Juzgado { name = "Juzgados de Pequeñas Causas Laborales", numero = laborales });
-            juzgados.Add(new Juzgado { name = "Juzgados Administrativos de Oralidad", numero = laborales });
-            juzgados.Add(new Juzgado { name = "Juzgados Administrativos del Circuito", numero = laborales });
-            juzgados.Add(new Juzgado { name = "Juzgados Civiles Municipales de Ejecucion", numero = laborales });
-            juzgados.Add(new Juzgado { name = "Juzgados Civiles del Circuito de Ejecucion", numero = civiles });
+            juzgados.Add(new Juzgado { name = "Juzgados de Familia ", numero = familia });
+            juzgados.Add(new Juzgado { name = "Tribunal Superior Cali", numero = superior });
+            juzgados.Add(new Juzgado { name = "Juzgados de Pequeñas Causas Laborales", numero = causasl });
+            juzgados.Add(new Juzgado { name = "Juzgados Administrativos de Oralidad", numero = amdOr });
+            //juzgados.Add(new Juzgado { name = "Juzgados Administrativos del Circuito", numero = laborales });
+            juzgados.Add(new Juzgado { name = "Juzgados Civiles Municipales de Ejecución", numero = civilme });
+            juzgados.Add(new Juzgado { name = "Juzgados Civiles del Circuito de Ejecución", numero = civilce });
 
             foreach (var juzgado in juzgados)
             {

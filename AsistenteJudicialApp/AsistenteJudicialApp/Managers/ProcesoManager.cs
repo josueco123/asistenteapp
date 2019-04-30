@@ -16,7 +16,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<IEnumerable<Proceso>> getProcesos()
         {
-            const String URL = "http://asistententejudicial.com/procesos";
+            const String URL = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/procesos";
 
             HttpClient client = htclient.getCliente();
 
@@ -34,7 +34,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<IEnumerable<Proceso>> getProcesosUser(string id)
         {
-            String URL = "http://asistententejudicial.com/procesos/" + id;
+            String URL = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/procesos/" + id;
 
             HttpClient client = htclient.getCliente();
 
@@ -52,7 +52,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<Proceso> getProceso(int id)
         {
-            String URL = "http://asistententejudicial.com/proceso/" + id;
+            String URL = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/proceso/" + id;
 
             HttpClient client = htclient.getCliente();
 
@@ -70,7 +70,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<Proceso> getProcesoRadicacion(string radicacion)
         {
-            String URL = "http://asistententejudicial.com/find/proceso/" + radicacion;
+            String URL = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/find/proceso/" + radicacion;
 
             HttpClient client = htclient.getCliente();
 
@@ -90,7 +90,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<IEnumerable<Estado>> getEstados(string id)
         {
-            String URL = "http://asistententejudicial.com/estados/" + id;
+            String URL = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/estados/" + id;
 
             HttpClient client = htclient.getCliente();
 
@@ -108,7 +108,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async void addProcesoUser(string id, string radicacion)
         {
-            String URL = "http://asistententejudicial.com/save/proceso/" + radicacion + "/" + id;
+            String URL = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/save/proceso/" + radicacion + "/" + id;
 
             HttpClient client = htclient.getCliente();
 
@@ -118,7 +118,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async void detachProcesoUser(string user_id, string proceso_id)
         {
-            String URL = "http://asistententejudicial.com/delete/proceso/" + user_id + "/" + proceso_id;
+            String URL = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/delete/proceso/" + user_id + "/" + proceso_id;
 
             HttpClient client = htclient.getCliente();
 
@@ -131,7 +131,7 @@ namespace AsistenteJudicialApp.Managers
 
             HttpClient client = new HttpClient();
 
-            string URL1 = "http://asistententejudicial.com/guardar";
+            string URL1 = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/guardar";
 
             Proceso proceso = new Proceso();
 
@@ -159,7 +159,7 @@ namespace AsistenteJudicialApp.Managers
 
             HttpClient client = new HttpClient();
 
-            string URL1 = "http://asistententejudicial.com/guardar/" + id;
+            string URL1 = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/guardar/" + id;
 
             
 

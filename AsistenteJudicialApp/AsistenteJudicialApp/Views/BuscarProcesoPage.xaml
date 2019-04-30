@@ -28,7 +28,7 @@
                         <Label x:Name="demandanteLabel" FontAttributes="Bold" FontSize="Small" TextColor="Black" />
                         <Label Text="Demandado" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
                         <Label x:Name="demandadoLabel" FontAttributes="Bold" FontSize="Small" TextColor="Black" />
-                        <Button IsEnabled="False" BackgroundColor="#0a3157" BorderRadius="20" TextColor="White" x:Name="agregarProceso" Text="agregar a mis Proceso" Clicked="AgregarProceso_Clicked"  />
+                        <Button IsEnabled="False" BackgroundColor="#0e457b" BorderRadius="20" TextColor="White" x:Name="agregarProceso" Text="agregar a mis Proceso" Clicked="AgregarProceso_Clicked"  />
                     </StackLayout>
                 </Frame>
             </StackLayout>

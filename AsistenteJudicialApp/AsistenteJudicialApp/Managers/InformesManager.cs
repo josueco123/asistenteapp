@@ -15,7 +15,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<IEnumerable<Informe>> getInformesUser(string id)
         {
-            String URL = "http://asistententejudicial.com/informes/" + id;
+            String URL = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/informes/" + id;
 
             HttpClient client = htclient.getCliente();
 

@@ -15,7 +15,7 @@
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                 </Grid>
-                <StackLayout Padding="5,0" Grid.Row="0" BackgroundColor="#0a3157" >
+                <StackLayout Padding="5,0" Grid.Row="0" BackgroundColor="#0e457b" >
                     <Image  Source="icn.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30" />
 
                     <Label Text="Bienvenido" FontSize="Medium" TextColor="White"  />

@@ -24,7 +24,7 @@
                         <Entry IsPassword="True" x:Name="passEntry2"/>
                         <Label Text="Al registrarte confirmas que has leido y aceptas los terminos y condiciones" FontSize="Small"/>
                         <Button Text="ver terminos y condiciones" FontSize="Small" x:Name="terminosBtn" BackgroundColor="Transparent" Clicked="TerminosBtn_Clicked"/>
-                        <Button Text="Continuar" x:Name="continuarBtn"  BackgroundColor="#0a3157" BorderRadius="20" TextColor="White" Clicked="ContinuarBtn_Clicked" />
+                        <Button Text="Continuar" x:Name="continuarBtn"  BackgroundColor="#0e457b" BorderRadius="20" TextColor="White" Clicked="ContinuarBtn_Clicked" />
                     </StackLayout>
                 </Frame>
             </StackLayout>

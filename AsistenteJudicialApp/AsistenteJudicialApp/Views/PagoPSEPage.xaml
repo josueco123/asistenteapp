@@ -5,8 +5,8 @@
     <ContentPage.Content>
         <StackLayout Margin="10">
             <StackLayout Orientation="Horizontal">
-                <Button Text="atras" HorizontalOptions="StartAndExpand" Clicked="OnBackButtonClicked" BackgroundColor="#0a3157" BorderRadius="20" TextColor="White"/>
-                <Button Text="adelante" HorizontalOptions="EndAndExpand" Clicked="OnForwardButtonClicked" BackgroundColor="#0a3157" BorderRadius="20" TextColor="White"/>
+                <Button Text="atras" HorizontalOptions="StartAndExpand" Clicked="OnBackButtonClicked" BackgroundColor="#0e457b" BorderRadius="20" TextColor="White"/>
+                <Button Text="adelante" HorizontalOptions="EndAndExpand" Clicked="OnForwardButtonClicked" BackgroundColor="#0e457b" BorderRadius="20" TextColor="White"/>
             </StackLayout>
             <!-- WebView needs to be given height and width request within layouts to render. -->
             <WebView x:Name="webView" WidthRequest="1000" HeightRequest="1000" />

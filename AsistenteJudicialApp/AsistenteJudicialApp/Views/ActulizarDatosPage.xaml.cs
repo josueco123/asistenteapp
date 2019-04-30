@@ -112,7 +112,7 @@ namespace AsistenteJudicialApp.Views
                 return;
             }
 
-            if (telefonoEntry.Text.Length < 9)
+            if (telefonoEntry.Text.Length < 10)
             {
                 await DisplayAlert("Error", "Debes ingresar un numero de telefono correcto", "Aceptar");
                 telefonoEntry.Focus();

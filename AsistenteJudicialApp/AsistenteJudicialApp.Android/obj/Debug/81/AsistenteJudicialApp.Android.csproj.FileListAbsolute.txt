@@ -136,9 +136,5 @@ D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.A
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp\bin\Debug\netstandard2.0\AsistenteJudicialApp.dll
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\bin\Debug\AsistenteJudicialApp.dll.mdb
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\AsistenteJudicialApp.dll.mdb
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\Plugin.Notifications.dll.mdb
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\SQLite-net.dll.mdb
-D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\linksrc\XamarinShortcutBadger.dll.mdb
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\drawable\splash.png
+D:\Xamarin apps\AsistenteJudicialApp\AsistenteJudicialApp\AsistenteJudicialApp.Android\obj\Debug\81\res\drawable\splashport.png

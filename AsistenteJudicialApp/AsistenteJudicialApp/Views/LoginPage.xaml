@@ -8,7 +8,7 @@
             
             <?Image Source="wallpapers.jpg" Aspect="AspectFill" /?>
 
-            <BoxView Color="#0a3157" />
+            <BoxView Color="#0e457b" />
 
             <ActivityIndicator x:Name="indicator">
 
@@ -30,7 +30,7 @@
                 <Button Text="Inicio" BackgroundColor="#0a3157" BorderRadius="20" TextColor="White" x:Name="login" Clicked="Login_Clicked" />
 
 
-                <Button Text="Registrarse" BackgroundColor="#0a3157" BorderRadius="20" TextColor="White" x:Name="registroBtn" Clicked="RegistroBtn_Clicked"/>
+                <Button Text="Registrarse" BackgroundColor="#0e457b" BorderRadius="20" TextColor="White" x:Name="registroBtn" Clicked="RegistroBtn_Clicked"/>
 
             </StackLayout>
 

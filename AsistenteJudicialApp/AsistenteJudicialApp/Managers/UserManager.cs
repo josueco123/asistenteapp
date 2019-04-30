@@ -15,7 +15,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<User> loginUser(string email, string password)
         {
-            String UT = "http://asistententejudicial.com/log/" + email + "/" + password;
+            String UT = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/log/" + email + "/" + password;
 
             HttpClient client = htclient.getCliente();          
 
@@ -32,7 +32,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async Task<User> getUser(int id)
         {
-            String UT = "http://asistententejudicial.com/users/" + id;
+            String UT = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/users/" + id;
 
             HttpClient client = htclient.getCliente();
 
@@ -65,7 +65,7 @@ namespace AsistenteJudicialApp.Managers
         }
         public async void saveUser(string nombre,string correo,string clave)
         {
-            string URL = "http://asistententejudicial.com/save/user";
+            string URL = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/save/user";
 
             HttpClient client = new HttpClient();
 
@@ -84,7 +84,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async void updateUser(int id,string nombre, string correo)
         {
-            string URL = "http://asistententejudicial.com/update/user/" + id;
+            string URL = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/update/user/" + id;
 
             HttpClient client = new HttpClient();
 
@@ -102,7 +102,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async void changePass(string email)
         {
-            String URL = "http://asistententejudicial.com/send/pass/" + email;
+            String URL = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/send/pass/" + email;
 
             HttpClient client = htclient.getCliente();
 
@@ -111,7 +111,7 @@ namespace AsistenteJudicialApp.Managers
 
         public async void infoPagos(string id, string num)
         {
-            String URL = "http://asistententejudicial.com/pago/" + id + "/"+ num;
+            String URL = "http://asistententejudicial.com/th4mxtads93iwkk393ko3mdjjeliekk4o3jeki33j3k/pago/" + id + "/"+ num;
 
             HttpClient client = htclient.getCliente();
 
