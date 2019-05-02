@@ -3167,13 +3167,13 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020051;
         public static final int abc_vector_test=0x7f020052;
         public static final int avd_hide_password=0x7f020053;
-        public static final int avd_hide_password_1=0x7f020146;
-        public static final int avd_hide_password_2=0x7f020147;
-        public static final int avd_hide_password_3=0x7f020148;
+        public static final int avd_hide_password_1=0x7f020148;
+        public static final int avd_hide_password_2=0x7f020149;
+        public static final int avd_hide_password_3=0x7f02014a;
         public static final int avd_show_password=0x7f020054;
-        public static final int avd_show_password_1=0x7f020149;
-        public static final int avd_show_password_2=0x7f02014a;
-        public static final int avd_show_password_3=0x7f02014b;
+        public static final int avd_show_password_1=0x7f02014b;
+        public static final int avd_show_password_2=0x7f02014c;
+        public static final int avd_show_password_3=0x7f02014d;
         public static final int common_full_open_on_phone=0x7f020055;
         public static final int common_google_signin_btn_icon_dark=0x7f020056;
         public static final int common_google_signin_btn_icon_dark_focused=0x7f020057;
@@ -3409,12 +3409,14 @@ containing a value of this type.
         public static final int notification_bg_normal=0x7f02013d;
         public static final int notification_bg_normal_pressed=0x7f02013e;
         public static final int notification_icon_background=0x7f02013f;
-        public static final int notification_template_icon_bg=0x7f020144;
-        public static final int notification_template_icon_low_bg=0x7f020145;
+        public static final int notification_template_icon_bg=0x7f020146;
+        public static final int notification_template_icon_low_bg=0x7f020147;
         public static final int notification_tile_bg=0x7f020140;
         public static final int notify_panel_notification_icon_bg=0x7f020141;
-        public static final int tooltip_frame_dark=0x7f020142;
-        public static final int tooltip_frame_light=0x7f020143;
+        public static final int splash=0x7f020142;
+        public static final int splashport=0x7f020143;
+        public static final int tooltip_frame_dark=0x7f020144;
+        public static final int tooltip_frame_light=0x7f020145;
     }
     public static final class id {
         public static final int ALT=0x7f0c003a;
@@ -3814,7 +3816,7 @@ containing a value of this type.
         public static final int Animation_AppCompat_DropDownUp=0x7f0d00a7;
         public static final int Animation_AppCompat_Tooltip=0x7f0d00a8;
         public static final int Animation_Design_BottomSheetDialog=0x7f0d016e;
-        public static final int AppCompatDialogStyle=0x7f0d0191;
+        public static final int AppCompatDialogStyle=0x7f0d0192;
         public static final int Base_AlertDialog_AppCompat=0x7f0d00a9;
         public static final int Base_AlertDialog_AppCompat_Light=0x7f0d00aa;
         public static final int Base_Animation_AppCompat_Dialog=0x7f0d00ab;
@@ -4116,6 +4118,7 @@ containing a value of this type.
         public static final int Theme_MediaRouter_Light=0x7f0d0004;
         public static final int Theme_MediaRouter_Light_DarkControlPanel=0x7f0d0005;
         public static final int Theme_MediaRouter_LightControlPanel=0x7f0d0006;
+        public static final int Theme_Splash=0x7f0d0191;
         public static final int ThemeOverlay_AppCompat=0x7f0d0116;
         public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0d0117;
         public static final int ThemeOverlay_AppCompat_Dark=0x7f0d0118;

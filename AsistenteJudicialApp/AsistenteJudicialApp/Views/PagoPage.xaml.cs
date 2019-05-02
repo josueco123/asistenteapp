@@ -41,13 +41,13 @@ namespace AsistenteJudicialApp.Views
                     UserManager manager = new UserManager();
                     manager.infoPagos(id, num);
                     recibirBtn.IsEnabled = true;
-                    await DisplayAlert("Listo", "Te hemos enviado un correo con la informacion para que realizces tu pago", "Aceptar");
+                    await DisplayAlert("Listo", "Te hemos enviado un correo con la informacion para que realices tu pago", "Aceptar");
 
                 }
-                catch (Exception ex)
+                catch
                 {
                     recibirBtn.IsEnabled = true;
-                    await DisplayAlert("Listo", ex.ToString(), "Aceptar");
+                    await DisplayAlert("", "Se ha presentado un error y no hemos podido enviarte el correo, por favor intenta más tarde", "Aceptar");
 
                 }
             }

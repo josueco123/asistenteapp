@@ -20,6 +20,7 @@ using Android.Widget;
 
 namespace AsistenteJudicialApp.Droid
 {
+    using Android.Support.V4.App;
     using Android.Util;
     using Gcm.Client;
     using WindowsAzure.Messaging;
@@ -139,17 +140,23 @@ namespace AsistenteJudicialApp.Droid
             intent.AddFlags(ActivityFlags.ClearTop);
             var pendingIntent = PendingIntent.GetActivity(this, 0, intent, PendingIntentFlags.OneShot);
 
+            Random random = new Random();
+            int pushCount = random.Next(9999 - 1000) + 1000; //for multiplepushnotificatio
+
             var notificationBuilder = new Notification.Builder(this)
+                   //var notificationBuilder = new NotificationCompat.Builder(this)
                         .SetContentTitle(title)
                         .SetSmallIcon(Resource.Drawable.icn)
                         .SetContentText(desc)
-                        .SetAutoCancel(true)                        
+                        .SetAutoCancel(true) 
+                        //.SetSound(NotificationDefaults.Sound)
+                        //.SetDefaults(NotificationDefaults.Vibrate)
                         .SetDefaults(NotificationDefaults.Sound | NotificationDefaults.Vibrate)                       
                         .SetContentIntent(pendingIntent);
 
             var notificationManager = NotificationManager.FromContext(this);
 
-            notificationManager.Notify(0, notificationBuilder.Build());
+            notificationManager.Notify(pushCount, notificationBuilder.Build());
         }
         /*void createNotification(string title, string desc)
         {

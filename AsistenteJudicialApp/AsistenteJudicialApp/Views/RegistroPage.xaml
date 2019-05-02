@@ -20,6 +20,7 @@
                         
                         <Label Text="Contraseña" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
                         <Entry IsPassword="True" x:Name="passEntry"/>
+                        <Label Text="Tu contraseña debe tener al menos 6 caracteres" FontSize="Small" />
                         <Label Text="Repetir Contraseña" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
                         <Entry IsPassword="True" x:Name="passEntry2"/>
                         <Label Text="Al registrarte confirmas que has leido y aceptas los terminos y condiciones" FontSize="Small"/>

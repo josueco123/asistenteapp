@@ -16,18 +16,18 @@
                             </Entry.Behaviors>
                         </Entry>
                         <Label Text="Ingresa los ultimos 7 numeros de la radicacion" FontSize="Small" />
-                        <Button BackgroundColor="#0a3157" BorderRadius="20" TextColor="White" x:Name="buscarProceso" Text="Buscar Proceso" Clicked="BuscarProceso_Clicked" />
+                        <Button BackgroundColor="#0e457b" BorderRadius="20" TextColor="White" x:Name="buscarProceso" Text="Buscar Proceso" Clicked="BuscarProceso_Clicked" />
                     </StackLayout>
                 </Frame>
                 <Frame >
                     <StackLayout Orientation="Vertical">
                         <Label Text="Datos de tu proceso" FontAttributes="Bold" FontSize="Medium"  TextColor="Black" HorizontalOptions="Center" />
                         <Label Text="Juzgado" FontAttributes="Bold" FontSize="Medium" TextColor="Black"  />
-                        <Label x:Name="juzgadoLabel" FontAttributes="Bold" FontSize="Small" TextColor="Black" />
+                        <Label x:Name="juzgadoLabel" FontSize="Small" TextColor="Black" />
                         <Label Text="Demandante" FontAttributes="Bold" FontSize="Medium" TextColor="Black"  />
-                        <Label x:Name="demandanteLabel" FontAttributes="Bold" FontSize="Small" TextColor="Black" />
+                        <Label x:Name="demandanteLabel" FontSize="Small" TextColor="Black" />
                         <Label Text="Demandado" FontAttributes="Bold" FontSize="Medium" TextColor="Black" />
-                        <Label x:Name="demandadoLabel" FontAttributes="Bold" FontSize="Small" TextColor="Black" />
+                        <Label x:Name="demandadoLabel" FontSize="Small" TextColor="Black" />
                         <Button IsEnabled="False" BackgroundColor="#0e457b" BorderRadius="20" TextColor="White" x:Name="agregarProceso" Text="agregar a mis Proceso" Clicked="AgregarProceso_Clicked"  />
                     </StackLayout>
                 </Frame>

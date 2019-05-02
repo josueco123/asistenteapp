@@ -27,7 +27,7 @@
             <StackLayout Grid.Row="1" Padding="30,20">
                 <Entry Placeholder="Correo" PlaceholderColor="Gray" x:Name="correoEntry" Keyboard="Email"/>
                 <Entry Placeholder="Contraseña" PlaceholderColor="Gray" IsPassword="True" x:Name="passEntry"/>
-                <Button Text="Inicio" BackgroundColor="#0a3157" BorderRadius="20" TextColor="White" x:Name="login" Clicked="Login_Clicked" />
+                <Button Text="Inicio" BackgroundColor="#0e457b" BorderRadius="20" TextColor="White" x:Name="login" Clicked="Login_Clicked" />
 
 
                 <Button Text="Registrarse" BackgroundColor="#0e457b" BorderRadius="20" TextColor="White" x:Name="registroBtn" Clicked="RegistroBtn_Clicked"/>

@@ -31,7 +31,7 @@
                     <Button x:Name="actualizarNtn" HorizontalOptions="Start" BackgroundColor="Transparent" Text="Actualizar Datos"  Clicked="ActualizarNtn_Clicked"/>
                     <Button x:Name="pagosBtn" HorizontalOptions="Start" BackgroundColor="Transparent"  Text="Realizar Pagos"  Clicked="PagosBtn_Clicked"/>
                     <Button x:Name="contactoBtn" HorizontalOptions="Start" BackgroundColor="Transparent"  Text="Contactenos" Clicked="ContactoBtn_Clicked"/>
-                    <Button x:Name="CerrarSesion" HorizontalOptions="Start" BackgroundColor="Transparent"   Clicked="CerrarSesion_Clicked" Text="Cerrar Session"/>
+                    <Button x:Name="CerrarSesion" HorizontalOptions="Start" BackgroundColor="Transparent"   Clicked="CerrarSesion_Clicked" Text="Cerrar Sessión"/>
                 </StackLayout>
             </Grid>
         </ScrollView>

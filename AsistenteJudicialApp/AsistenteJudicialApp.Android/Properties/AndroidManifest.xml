@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.SuecoApps.AsistenteJudicialApp" android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="26" />
-	<application android:label="AsistenteJudicialApp.Android" android:icon="@drawable/icn"></application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.1" package="com.SuecoApps.AsistenteJudicialApp" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="18" android:targetSdkVersion="26" />
+	<application android:label="Asistente Judicial" android:icon="@drawable/icn"></application>
 	<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" />
 	<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
 		<intent-filter>
@@ -11,4 +11,8 @@
 		</intent-filter>
 	</receiver>
 	<uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
 </manifest>

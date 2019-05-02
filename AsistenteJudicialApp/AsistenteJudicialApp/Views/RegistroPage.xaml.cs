@@ -60,6 +60,13 @@ namespace AsistenteJudicialApp.Views
                 return;
             }
 
+            if(passEntry.Text.Length < 6)
+            {
+                await DisplayAlert("Error", "Debes ingresar una contraseña valida", "Aceptar");
+                passEntry.Focus();
+                return;
+            }
+
             try
             {
                 continuarBtn.IsEnabled = false;
